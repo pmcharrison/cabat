@@ -17,7 +17,7 @@ ca_bat <- function(
   )
 }
 
-stop("Need to constrain starting item")
+warning("Reminder: need to constrain starting item")
 
 training <- function() {
   NULL
