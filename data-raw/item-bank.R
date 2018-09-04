@@ -1,4 +1,4 @@
-item_bank <- read.csv("inst/item-bank.csv", stringsAsFactors = FALSE)
+item_bank <- read.csv("data-raw/item-bank.csv", stringsAsFactors = FALSE)
 
 for (col in c("difficulty_with_track_effect",
               "track_random_intercept",

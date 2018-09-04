@@ -16,15 +16,15 @@ cabat <- function(
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(item_bank_audio),
             is.scalar.character(practice_items))
+  item_bank_audio <- gsub("/$", "", item_bank_audio)
+  practice_items <- gsub("/$", "", practice_items)
   arg <- as.list(environment())
   c(
-    if (take_training) training(),
-    main_test(opt),
+    if (take_training) training(practice_items = practice_items, num_items = num_items),
+    main_test(arg),
     feedback
   )
 }
-
-warning("Reminder: need to constrain starting item")
 
 # get_cb_group <- function(item_bank) {
 #   res <- item_bank$track_name
