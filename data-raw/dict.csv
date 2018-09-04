@@ -7,16 +7,17 @@ ABAT_0005_I_0001_1,Dein Beatwahrnehmungs-IQ war:,Your Beat Perception IQ was:
 ABAT_0006_I_0001_1,Beispiel - **Neben** dem Beat (OFF)\\In diesem Beispiel sind die Beep-Töne **neben** dem Beat der Musik.,Example - **Off** the beat\\In this example the beeps are **off** the beat of the music.
 ABAT_0007_I_0001_1,Beatwahrnehmungs-IQ,Beat Perception IQ
 ABAT_0008_I_0001_1,"In diesem Test hörst du zwei Versionen desselben Musikausschnittes.\\ In einer Version sind die Beep-Töne **auf** dem Beat, in der anderen **neben** dem Beat. \\Entscheide, ob in der ersten oder der zweiten Version die Beep-Töne **auf** dem Beat waren.","In the test you will be played two versions of the same music clip, one after the other.\\ One version will have beeps **on** the beat, and the other will have beeps **off** the beat.\\ Your task is to decide whether the clip with beeps **on** the beat came first or second."
-ABAT_0009_I_0001_1,**Beispiel {{no_example}}/2**\\In welcher Version sind die Beep-Töne **auf** dem Beat?,**Example question 1/2**\\Which clip had beeps **on** the beat?
+ABAT_0009_I_0001_1,**Beispiel {{no_example}}/2**\\In welcher Version sind die Beep-Töne **auf** dem Beat?,**Example question {{no_example}}/2**\\Which clip had beeps **on** the beat?
 ABAT_0010_I_0001_1,Erste,First
 ABAT_0011_I_0001_1,Richtig!,Correct!
 ABAT_0012_I_0001_1,**{{feedback}}**\\Klicke auf 'Weiter' für ein weiteres Beispiel.,**{{feedback}}**\\Press 'Continue' to try another example.
 ABAT_0013_I_0001_1,Falsch.,Incorrect.
-ABAT_0014_I_0001_1,"**{{feedback}}**\\Klicke auf 'Zurück', um die Anweisungen erneut zu lesen und die Beispiele erneut zu versuchen,\\ oder klicke auf 'Weiter', um zum  Haupttest zu gelangen.","**{{feedback}}**\\Press 'Go back' to read the instructions and try the examples again,\\or press 'Continue' to continue to the main test."
+ABAT_0014_I_0001_1,"**{{feedback}}**\\Klicke auf 'Zurück', um die Anweisungen erneut zu lesen und die Beispiele erneut zu versuchen,\\ oder klicke auf 'Weiter', um zum  Haupttest zu gelangen.","**{{feedback}}**\\Press 'Go back' to read the instructions and try the examples again,\\or press 'Next' to continue to the main test."
 ABAT_0015_I_0001_1,Zweite,Second
 ABAT_0016_I_0001_1,"Nun geht es mit dem Haupttest los, in dem deine Ergebnisse gespeichert werden.\\ Ab jetzt bekommst du keine Rückmeldung mehr. Viel Erfolg!","You are about to start the main test, where your results will be recorded.\\You won't receive any feedback for this stage. Good luck!"
-ABAT_0017_I_0001_1,**Frage {{num_question}} von {{test_length}}**,Question {{num_question}} out of {{test_length}}
+ABAT_0017_I_0001_1,Frage **{{num_question}}** von **{{test_length}}**,Question **{{num_question}}** out of **{{test_length}}**
 ABAT_0018_I_0001_1,"Dein Browser unterstützt kein Audio. Dieser Test funktioniert nicht ohne Audio, sorry!","Your browser doesn't support audio. This test won't work without audio, sorry!"
 ABAT_0019_I_0001_1,"In einer der Versionen sind die Beep-Töne auf dem Beat, in der anderen neben dem Beat.\\In welcher Version waren die Beep-Töne **auf** dem Beat?\\Wenn du nicht sicher bist, entscheide aus dem Bauch heraus.","One of these clips has beeps on the beat, the other off the beat.\\ Which clip had beeps **on** the beat? If you don't know, give your best guess!"
 ABAT_0020_I_0001_1,Du hast den Beat-Wahrnehmungs-Test abgeschlossen.,You completed the beat perception test!
-ABAT_0021_I_0001_1,Weiter,Continue
+ABAT_0021_I_0001_1,Weiter,Next
+ABAT_0022_I_0001_1,Zurück,Go back

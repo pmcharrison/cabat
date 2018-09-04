@@ -5,7 +5,6 @@ demo_cabat <- function(num_items = 25L,
                        admin_password = "demo",
                        researcher_email = "p.m.c.harrison@qmul.ac.uk") {
   elts <- c(
-    psychTestR::one_button_page("Welcome to the CABAT demo!"),
     cabat::cabat(num_items = num_items,
                  take_training = take_training,
                  feedback = cabat::cabat.feedback.simple_score()),

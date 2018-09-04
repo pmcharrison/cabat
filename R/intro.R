@@ -1,42 +1,53 @@
-intro <- function(media_dir) {
-  shiny::withTags(c(
-    psychTestR::one_button_page("The Pitch Imagery Arrow Task has been designed to teach you to successfully imagine musical tones from a visual prompt."),
-    psychTestR::one_button_page("Each trial starts with the word “Begin” on the screen, and you will hear an ascending major scale, which provides the key or context for that trial. You will then see a dot on the screen and hear a start note. Press 'Next' for an example of this."),
-    psychTestR::video_NAFC_page(
-      label = "example_context",
-      prompt = "Here is an example context:",
-      choices = "Next",
-      url = file.path(media_dir, "Scale_C_ton.mp4"),
-      save_answer = FALSE
-    ),
-    psychTestR::one_button_page("A variable number of up and/or down arrows will then appear in a sequence, with a corresponding tone, that is stepping up or down the scale. Press 'Next' for an example of these arrows appearing after the ascending scale and start note."),
-    psychTestR::video_NAFC_page(
-      label = "example_arrows",
-      prompt = "Here is an example of arrows appearing after the ascending scale and start note:",
-      choices = "Next",
-      url = file.path(media_dir, "Example_Trial_sounded_arr.mp4"),
-      save_answer = FALSE
-    ),
-    psychTestR::one_button_page(
-      "At some point in the trial, an arrow is shown with no tone heard. Your job is to imagine that exact missing tone. The number of tones to be imagined in each trial will vary from 1 to 5 tones. The word “hold” will appear with the last silent arrow of the sequence. Hold in your mind the sound of this last tone as you prepare to hear a test tone. Press 'Next' for an example of a single silent arrow added to our trial example."
-    ),
-    psychTestR::video_NAFC_page(
-      label = "example_silent_arrow",
-      prompt = "Here is an example:",
-      choices = "Next",
-      url = file.path(media_dir, "Example_Trial_all_arr.mp4"),
-      save_answer = FALSE
-    ),
-    psychTestR::one_button_page(
-      "To test the accuracy of your imagery, a test tone will be sounded and a white fixation cross will display. The tone will either match the note you are imagining or it won't match. Your task will be to determine which is the case. Press 'Next' for the full example trial and try to respond correctly."
-    ),
-    psychTestR::video_NAFC_page(
-      label = "example_complete_trial",
-      prompt = "Here is an example complete trial:",
-      choices = c("Match", "No match"),
-      url = file.path(media_dir, "Example_Trial_complete.mp4")
-    ),
-    psychTestR::one_button_page("We encourage you to just use your imagery to play the missing notes in your head, and don’t hum or move as you imagine. From earlier tests we know that using only your imagery gives the best results on the test."),
-    psychTestR::one_button_page("There are 3 practice trials in which you will receive feedback. You are free to attempt these as many times as you wish to familiarise yourself with the task.")
-  ))
+info_page <- function(id) {
+  psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(id)),
+                              button_text = psychTestR::i18n("ABAT_0021_I_0001_1"))
+}
+
+audio_ex_page <- function(prompt_id, url) {
+  psychTestR::audio_NAFC_page(
+    label = "ex",
+    prompt = shiny::HTML(psychTestR::i18n(prompt_id)),
+    choices = psychTestR::i18n("ABAT_0021_I_0001_1"),
+    url = url,
+    save_answer = FALSE
+  )
+}
+
+intro <- function(practice_items) {
+  psychTestR::new_timeline({
+    c(
+      info_page("ABAT_0001_I_0001_1"),
+      psychTestR::code_block(function(state, ...) {
+        psychTestR::set_local("do_intro", TRUE, state)
+      }),
+      psychTestR::loop_while(
+        test = function(state, ...) psychTestR::get_local("do_intro", state),
+        logic = c(
+          info_page("ABAT_0002_I_0001_1"),
+          info_page("ABAT_0003_I_0001_1"),
+          audio_ex_page("ABAT_0004_I_0001_1", file.path(practice_items, "training1.mp3")),
+          audio_ex_page("ABAT_0006_I_0001_1", file.path(practice_items, "training2.mp3")),
+          info_page("ABAT_0008_I_0001_1"),
+          practice(practice_items),
+          ask_repeat()
+        )),
+      info_page("ABAT_0016_I_0001_1")
+    )
+  },
+  dict = cabat::dict)
+}
+
+ask_repeat <-function() {
+  psychTestR::NAFC_page(
+    label = "ask_repeat",
+    prompt = shiny::HTML(psychTestR::i18n("ABAT_0014_I_0001_1",
+                                          sub = list(feedback = ""))),
+    choices = c("continue", "go_back"),
+    labels = psychTestR::i18n(c("ABAT_0022_I_0001_1", "ABAT_0021_I_0001_1")),
+    save_answer = FALSE,
+    arrange_vertically = FALSE,
+    on_complete = function(state, answer, ...) {
+      psychTestR::set_local("do_intro", identical(answer, "go_back"), state)
+    }
+  )
 }

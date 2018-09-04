@@ -1,4 +1,4 @@
 library(testthat)
-library(CABAT)
+library(cabat)
 
-test_check("CABAT")
+test_check("cabat")

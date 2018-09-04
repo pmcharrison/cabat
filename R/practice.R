@@ -1,44 +1,27 @@
-practice <- function(media_dir) {
+practice <- function(practice_items) {
   unlist(lapply(
-    list(list(id = "Prac_Trial_Lvl1",
-              answer = "Match"),
-         list(id = "Prac_Trial_Lvl2",
-              answer = "No match"),
-         list(id = "Prac_Trial_Lvl3",
-              answer = "Match")
+    list(list(id = "training3",
+              answer = "1",
+              no = 1L),
+         list(id = "training4",
+              answer = "2",
+              no = 2L)
     ),
     function(x) {
       list(
-        psychTestR::video_NAFC_page(
+        psychTestR::audio_NAFC_page(
           label = "practice_question",
-          prompt = "Did the final tone match the note you were imagining?",
-          url = file.path(media_dir, paste0(x$id, ".mp4")),
-          choices = c("Match", "No match")
+          prompt = shiny::HTML(psychTestR::i18n("ABAT_0009_I_0001_1",
+                                                sub = list(no_example = x$no))),
+          url = file.path(practice_items, paste0(x$id, ".mp3")),
+          choices = as.character(c(1, 2)),
+          labels = psychTestR::i18n(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1")),
+          save_answer = FALSE
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
-            if (answer == x$answer) "You answered correctly!" else
-              "You answered incorrectly."
+            if (answer == x$answer)
+              psychTestR::i18n("ABAT_0011_I_0001_1") else
+                psychTestR::i18n("ABAT_0013_I_0001_1")
           )}))}))
 }
-
-repeatable_practice <- function(media_dir) {
-  c(
-    psychTestR::code_block(function(state, ...) {
-      psychTestR::set_local("do_practice", TRUE, state)
-    }),
-    psychTestR::loop_while(
-      test = function(state, ...) psychTestR::get_local("do_practice", state),
-      logic = c(
-        practice(media_dir),
-        psychTestR::NAFC_page(
-          label = "check_repeat",
-          prompt = "Would you like to try the practice examples again?",
-          choices = c("Yes", "No"),
-          save_answer = FALSE,
-          arrange_vertically = FALSE,
-          on_complete = function(state, answer, ...) {
-            psychTestR::set_local("do_practice", identical(answer, "No"), state)
-          }
-        )
-      )))}

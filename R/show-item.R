@@ -1,17 +1,20 @@
 show_item <- function(item_bank_audio) {
-  function(item) {
+  function(item, ...) {
     stopifnot(is(item, "item"), nrow(item) == 1L)
-    item_number <- psychTestCAT::get_item_number(item)
-    num_items_in_test <- psychTestCAT::get_num_items_in_test(item)
+    item_number <- psychTestRCAT::get_item_number(item)
+    num_items_in_test <- psychTestRCAT::get_num_items_in_test(item)
     prompt <- get_prompt(item_number, num_items_in_test)
-    choices <- get_choices()
-    psychTest::audio_NAFC_page(
+    choices <- c("1", "2")
+    labels <- psychTestR::i18n(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1"))
+    psychTestR::audio_NAFC_page(
       label = paste0("q", item_number),
       prompt = prompt,
       choices = choices,
+      labels = labels,
       url = file.path(item_bank_audio, item$file_name),
-      wait = FALSE,
-      on_complete = NULL
+      wait = TRUE,
+      on_complete = NULL,
+      save_answer = FALSE
     )
   }
 }
@@ -19,15 +22,9 @@ show_item <- function(item_bank_audio) {
 get_prompt <- function(item_number, num_items_in_test) {
   shiny::div(
     shiny::p(
-      "Question ",
-      shiny::strong(item_number),
-      " out of ",
-      shiny::strong(if (is.null(num_items_in_test)) "?" else num_items_in_test)),
-    shiny::p(
-      "In which extract was the beep-track on the beat?"
-    ))
-}
-
-get_choices <- function() {
-  c(`First was on the beat` = "1", `Second was on the beat` = "2")
+      shiny::HTML(psychTestR::i18n("ABAT_0017_I_0001_1", sub = list(
+        num_question = item_number,
+        test_length = num_items_in_test
+      )))),
+    shiny::p(shiny::HTML(psychTestR::i18n("ABAT_0019_I_0001_1"))))
 }

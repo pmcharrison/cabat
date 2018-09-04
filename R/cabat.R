@@ -3,7 +3,7 @@ cabat <- function(
   num_items = 25L,
   take_training = TRUE,
   label = "BAT",
-  feedback = ca_bat.feedback.no_score(),
+  feedback = cabat.feedback.no_score(),
   item_bank_audio = "http://media.gold-msi.org/test_materials/BAT/v1/audio",
   practice_items = "http://media.gold-msi.org/test_materials/BAT/v1/practice-items",
   next_item.criterion = "bOpt",
@@ -11,7 +11,8 @@ cabat <- function(
   next_item.prior_dist = "norm",
   next_item.prior_par = c(0, 1),
   final_ability.estimator = "WL",
-  constrain_answers = FALSE
+  constrain_answers = FALSE,
+  i18n_dict = cabat::dict
 ) {
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(item_bank_audio),
@@ -19,10 +20,12 @@ cabat <- function(
   item_bank_audio <- gsub("/$", "", item_bank_audio)
   practice_items <- gsub("/$", "", practice_items)
   arg <- as.list(environment())
-  c(
-    if (take_training) training(practice_items = practice_items, num_items = num_items),
-    main_test(arg),
-    feedback
+  psychTestR::new_timeline(
+    c(
+      if (take_training) intro(practice_items = practice_items),
+      main_test(arg),
+      feedback
+    ), dict = i18n_dict
   )
 }
 
