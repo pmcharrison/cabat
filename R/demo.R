@@ -3,7 +3,8 @@ demo_cabat <- function(num_items = 25L,
                        take_training = TRUE,
                        feedback = cabat::cabat.feedback.simple_score(),
                        admin_password = "demo",
-                       researcher_email = "p.m.c.harrison@qmul.ac.uk") {
+                       researcher_email = "p.m.c.harrison@qmul.ac.uk",
+                       languages = cabat_languages()) {
   elts <- c(
     cabat::cabat(num_items = num_items,
                  take_training = take_training,
@@ -16,5 +17,6 @@ demo_cabat <- function(num_items = 25L,
     opt = psychTestR::test_options(title = "CABAT demo",
                                    admin_password = admin_password,
                                    researcher_email = researcher_email,
-                                   demo = TRUE))
+                                   demo = TRUE,
+                                   languages = languages))
 }

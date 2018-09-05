@@ -4,7 +4,8 @@ standalone_cabat <- function(num_items = 25L,
                              feedback = cabat::cabat.feedback.no_score(),
                              title = "Beat perception test",
                              admin_password = "replace-with-secure-password",
-                             researcher_email = "p.m.c.harrison@qmul.ac.uk") {
+                             researcher_email = "p.m.c.harrison@qmul.ac.uk",
+                             languages = cabat_languages()) {
   elts <- c(
     psychTestR::get_p_id(),
     cabat(num_items = num_items,
@@ -19,5 +20,7 @@ standalone_cabat <- function(num_items = 25L,
     opt = psychTestR::test_options(title = title,
                                    admin_password = admin_password,
                                    researcher_email = researcher_email,
-                                   demo = FALSE))
+                                   demo = FALSE,
+                                   languages = languages)
+  )
 }

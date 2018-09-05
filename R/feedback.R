@@ -1,6 +1,11 @@
 #' @export
-cabat.feedback.no_score <- function() {
-  psychTestR::one_button_page("You finished the test!")
+cabat.feedback.no_score <- function(dict = cabat::dict) {
+  psychTestR::new_timeline(
+    psychTestR::one_button_page(
+      shiny::HTML(psychTestR::i18n("ABAT_0020_I_0001_1"))
+    ),
+    dict = dict
+  )
 }
 
 #' @export
