@@ -1,5 +1,5 @@
 #' @export
-cabat.feedback.no_score <- function(dict = cabat::dict) {
+cabat.feedback.no_score <- function(dict = cabat::cabat_dict) {
   psychTestR::new_timeline(
     psychTestR::one_button_page(
       shiny::HTML(psychTestR::i18n("ABAT_0020_I_0001_1"))

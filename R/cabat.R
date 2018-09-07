@@ -12,7 +12,7 @@ cabat <- function(
   next_item.prior_par = c(0, 1),
   final_ability.estimator = "WL",
   constrain_answers = FALSE,
-  i18n_dict = cabat::dict
+  dict = cabat::cabat_dict
 ) {
   stopifnot(is.scalar.character(label), is.scalar.numeric(num_items),
             is.scalar.logical(take_training), is.scalar.character(item_bank_audio),
@@ -25,7 +25,7 @@ cabat <- function(
       if (take_training) intro(practice_items = practice_items),
       main_test(arg),
       feedback
-    ), dict = i18n_dict
+    ), dict = dict
   )
 }
 

@@ -13,7 +13,7 @@ audio_ex_page <- function(prompt_id, url) {
   )
 }
 
-intro <- function(practice_items) {
+intro <- function(practice_items, dict) {
   psychTestR::new_timeline({
     c(
       info_page("ABAT_0001_I_0001_1"),
@@ -34,7 +34,7 @@ intro <- function(practice_items) {
       info_page("ABAT_0016_I_0001_1")
     )
   },
-  dict = cabat::dict)
+  dict = dict)
 }
 
 ask_repeat <-function() {

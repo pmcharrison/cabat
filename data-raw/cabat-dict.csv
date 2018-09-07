@@ -21,3 +21,5 @@ ABAT_0019_I_0001_1,"In einer der Versionen sind die Beep-Töne auf dem Beat, in 
 ABAT_0020_I_0001_1,Du hast den Beat-Wahrnehmungs-Test abgeschlossen.,You completed the beat perception test!
 ABAT_0021_I_0001_1,Weiter,Next
 ABAT_0022_I_0001_1,Zurück,Go back
+enter_p_id,Bitte geben Sie Ihre Teilnehmer-ID ein.,Please enter your participant ID.
+session_end,Deine Ergebnisse sind gespeichert. Du kannst dieses Fenster jetzt schließen.,Your results have been saved. You may now close the browser window.
