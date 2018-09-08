@@ -12,7 +12,7 @@ demo_cabat <- function(num_items = 25L,
                  feedback = cabat::cabat.feedback.simple_score(),
                  dict = dict),
     psychTestR::new_timeline(
-      psychTestR::final_page("You may now close the browser window."),
+      psychTestR::final_page(psychTestR::i18n("you_may_close_browser")),
       dict = dict
     )
   )

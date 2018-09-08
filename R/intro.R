@@ -1,5 +1,5 @@
 info_page <- function(id) {
-  psychTestR::one_button_page(shiny::HTML(psychTestR::i18n(id)),
+  psychTestR::one_button_page(psychTestR::i18n(id),
                               button_text = psychTestR::i18n("ABAT_0021_I_0001_1"))
 }
 
@@ -14,7 +14,7 @@ audio_ex_page <- function(prompt_id, url) {
 }
 
 intro <- function(practice_items, dict) {
-  psychTestR::new_timeline({
+  psychTestR::new_timeline(
     c(
       info_page("ABAT_0001_I_0001_1"),
       psychTestR::code_block(function(state, ...) {
@@ -32,18 +32,16 @@ intro <- function(practice_items, dict) {
           ask_repeat()
         )),
       info_page("ABAT_0016_I_0001_1")
-    )
-  },
-  dict = dict)
+    ), dict = dict)
 }
 
 ask_repeat <-function() {
   psychTestR::NAFC_page(
     label = "ask_repeat",
     prompt = shiny::HTML(psychTestR::i18n("ABAT_0014_I_0001_1",
-                                          sub = list(feedback = ""))),
+                                          sub = c(feedback = ""))),
     choices = c("continue", "go_back"),
-    labels = psychTestR::i18n(c("ABAT_0022_I_0001_1", "ABAT_0021_I_0001_1")),
+    labels = lapply(c("ABAT_0022_I_0001_1", "ABAT_0021_I_0001_1"), psychTestR::i18n),
     save_answer = FALSE,
     arrange_vertically = FALSE,
     on_complete = function(state, answer, ...) {
