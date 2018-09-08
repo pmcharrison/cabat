@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    psychTestR (>= 1.1.0),
+    psychTestR (>= 2.0.0),
     psychTestRCAT (>= 1.0.1)
 Suggests: 
     testthat (>= 2.0.0)
