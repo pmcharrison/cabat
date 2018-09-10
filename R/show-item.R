@@ -5,7 +5,7 @@ show_item <- function(item_bank_audio) {
     num_items_in_test <- psychTestRCAT::get_num_items_in_test(item)
     prompt <- get_prompt(item_number, num_items_in_test)
     choices <- c("1", "2")
-    labels <- psychTestR::i18n(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1"))
+    labels <- lapply(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1"), psychTestR::i18n)
     psychTestR::audio_NAFC_page(
       label = paste0("q", item_number),
       prompt = prompt,
