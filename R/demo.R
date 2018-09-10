@@ -1,7 +1,7 @@
 #' @export
 demo_cabat <- function(num_items = 25L,
                        take_training = TRUE,
-                       feedback = cabat.feedback.graph(),
+                       feedback = psychTestRCAT::cat.feedback.graph("BAT"),
                        admin_password = "demo",
                        researcher_email = "p.m.c.harrison@qmul.ac.uk",
                        languages = "EN",
