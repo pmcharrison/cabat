@@ -40,7 +40,7 @@ ask_repeat <-function() {
     label = "ask_repeat",
     prompt = shiny::HTML(psychTestR::i18n("ABAT_0014_I_0001_1",
                                           sub = c(feedback = ""))),
-    choices = c("continue", "go_back"),
+    choices = c("go_back", "continue"),
     labels = lapply(c("ABAT_0022_I_0001_1", "ABAT_0021_I_0001_1"), psychTestR::i18n),
     save_answer = FALSE,
     arrange_vertically = FALSE,
