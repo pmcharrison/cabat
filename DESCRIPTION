@@ -16,3 +16,4 @@ Suggests:
     testthat (>= 2.0.0)
 Byte-Compile: yes
 RoxygenNote: 6.1.0
+Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
