@@ -3,13 +3,15 @@ Title: R Implementation of the Computerised Beat Alignment Test (CA-BAT)
 Version: 0.1.0
 Authors@R: person("Peter", "Harrison", email = "p.m.c.harrison@qmul.ac.uk", role = c("aut", "cre"))
 Description: R Implementation of the Computerised Beat Alignment Test (CA-BAT).
-Depends: R (>= 3.4.2)
+Depends: R (>= 3.4.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
+    methods,
     psychTestR (>= 2.0.0),
-    psychTestRCAT (>= 1.0.2)
+    psychTestRCAT (>= 1.0.2),
+    shiny (>= 1.1.0)
 Suggests: 
     testthat (>= 2.0.0)
 Byte-Compile: yes
