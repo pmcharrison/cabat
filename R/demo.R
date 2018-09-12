@@ -1,5 +1,5 @@
 #' @export
-demo_cabat <- function(num_items = 25L,
+demo_cabat <- function(num_items = 10L,
                        take_training = TRUE,
                        feedback = psychTestRCAT::cat.feedback.graph("BAT"),
                        admin_password = "demo",
