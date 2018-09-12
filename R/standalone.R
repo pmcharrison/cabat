@@ -8,7 +8,11 @@ standalone_cabat <- function(num_items = 25L,
                              languages = cabat_languages(),
                              dict = cabat::cabat_dict) {
   elts <- c(
-    psychTestR::get_p_id(),
+    psychTestR::new_timeline(
+      psychTestR::get_p_id(prompt = psychTestR::i18n("enter_p_id"),
+                           button_text = psychTestR::i18n("ABAT_0021_I_0001_1")),
+      dict = dict
+    ),
     cabat(num_items = num_items,
           take_training = take_training,
           feedback = feedback),
