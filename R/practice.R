@@ -22,6 +22,7 @@ practice <- function(practice_items) {
           psychTestR::one_button_page(
             if (answer == x$answer)
               psychTestR::i18n("ABAT_0011_I_0001_1") else
-                psychTestR::i18n("ABAT_0013_I_0001_1")
+                psychTestR::i18n("ABAT_0013_I_0001_1"),
+            button_text = psychTestR::i18n("ABAT_0021_I_0001_1")
           )}))}))
 }
