@@ -4,7 +4,6 @@ demo_cabat <- function(num_items = 25L,
                        feedback = psychTestRCAT::cat.feedback.graph("BAT"),
                        admin_password = "demo",
                        researcher_email = "p.m.c.harrison@qmul.ac.uk",
-                       languages = "EN",
                        dict = cabat::cabat_dict) {
   elts <- cabat::cabat(num_items = num_items,
                        take_training = take_training,
@@ -17,5 +16,5 @@ demo_cabat <- function(num_items = 25L,
                                    admin_password = admin_password,
                                    researcher_email = researcher_email,
                                    demo = TRUE,
-                                   languages = languages))
+                                   languages = "EN"))
 }
