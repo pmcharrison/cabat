@@ -16,7 +16,6 @@ audio_ex_page <- function(prompt_id, url) {
 intro <- function(practice_items, dict) {
   psychTestR::new_timeline(
     c(
-      info_page("ABAT_0001_I_0001_1"),
       psychTestR::code_block(function(state, ...) {
         psychTestR::set_local("do_intro", TRUE, state)
       }),

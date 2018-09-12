@@ -5,10 +5,14 @@ demo_cabat <- function(num_items = 25L,
                        admin_password = "demo",
                        researcher_email = "p.m.c.harrison@qmul.ac.uk",
                        dict = cabat::cabat_dict) {
-  elts <- cabat::cabat(num_items = num_items,
-                       take_training = take_training,
-                       feedback = feedback,
-                       dict = dict)
+  elts <- c(
+    psychTestR::new_timeline(psychTestR::one_button_page(
+      psychTestR::i18n("demo_intro")
+    ), dict = dict),
+    cabat::cabat(num_items = num_items,
+                 take_training = take_training,
+                 feedback = feedback,
+                 dict = dict))
 
   psychTestR::make_test(
     elts,
