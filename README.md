@@ -1,5 +1,7 @@
 # Computerised Adaptive Beat Alignment Test (CA-BAT) 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
+
 Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
 This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefen, D. (2018). 
