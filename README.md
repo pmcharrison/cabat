@@ -1,6 +1,6 @@
 # Computerised Adaptive Beat Alignment Test (CA-BAT) 
 
-Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo --> 
+Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
 This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefen, D. (2018). 
 Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
