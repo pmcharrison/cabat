@@ -17,7 +17,7 @@ Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
 and this implementation:
 
 > Harrison, P. M. C., & Müllensiefen, D. (2018). 
-Computerised Adaptive Beat Alignment Test (CA-BAT), psychTestR implementation.
+Computerised Adaptive Beat Alignment Test (CA-BAT), psychTestR implementation. Zenodo.
 https://doi.org/10.5281/zenodo.1415353
 
 We also advise mentioning the software versions you used,
