@@ -8,6 +8,25 @@ This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefe
 Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
 Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
 
+## Citation
+
+When using the CA-BAT in your own research, you can cite the original CA-BAT research paper above
+(Harrison & Müllensiefen, 2018). 
+When using this implementation, you can also cite this repository with the permanent DOI link
+https://doi.org/10.5281/zenodo.1415353.
+We also advise mentioning the software versions you used,
+in particular the versions of the `cabat`, `psychTestR`, and `psychTestRCAT` packages.
+You can find these version numbers from R by running the following commands:
+
+``` r
+library(cabat)
+library(psychTestR)
+library(psychTestRCAT)
+if (!require(devtools)) install.packages("devtools")
+x <- devtools::session_info()
+x$packages[x$packages$package %in% c("cabat", "psychTestR", "psychTestRCAT"), ]
+```
+
 ## Installation instructions (local use)
 
 1. If you don't have R installed, install it from here: https://cloud.r-project.org/
