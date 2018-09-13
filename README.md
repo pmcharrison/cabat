@@ -8,14 +8,6 @@ This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefe
 Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
 Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
 
-<!-- This implementation can be cited using the following permanent link:
-https://doi.org/10.5281/zenodo.1300951 -->
-
-The demo version of the CA-BAT (http://shiny.pmcharrison.com/cabat-demo)
-gives you feedback after each question,
-but in real experiments this feedback is disabled.
-For using the test in your own studies, we recommend local installation (see below).
-
 ## Installation instructions (local use)
 
 1. If you don't have R installed, install it from here: https://cloud.r-project.org/
