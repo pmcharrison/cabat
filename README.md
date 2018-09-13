@@ -92,6 +92,12 @@ and downloading your data.
 For more details on the psychTestR interface, 
 see http://psychtestr.com/.
 
+The CA-BAT currently supports English and German.
+You can select one of these languages by passing a language code as 
+an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
+or alternatively by passing it as a URL parameter to the test browser,
+eg. http://127.0.0.1:4412/?language=DE (note that the `p_id` argument must be empty).
+
 ## Installation instructions (Shiny Server)
 
 1. Complete the installation instructions described under 'Local use'.
