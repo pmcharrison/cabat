@@ -2,8 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
 
-The Computerised Adaptive Beat Alignment Test (CA-BAT)
-tests a listener's beat perception ability.
+The CA-BAT is an adaptive test of beat perception ability.
 We invite you to try the test [here](http://shiny.pmcharrison.com/cabat-demo), and
 to read the paper [here](https://doi.org/10.1038/s41598-018-30318-8).
 
