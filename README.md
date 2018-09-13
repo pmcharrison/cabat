@@ -2,18 +2,25 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
 
-Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
-
-This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefen, D. (2018). 
-Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
-Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
+The Computerised Adaptive Beat Alignment Test (CA-BAT)
+tests a listener's beat perception ability.
+We invite you to try the test [here](http://shiny.pmcharrison.com/cabat-demo), and
+to read the paper [here](https://doi.org/10.1038/s41598-018-30318-8).
 
 ## Citation
 
-When using the CA-BAT in your own research, you can cite the original CA-BAT research paper above
-(Harrison & Müllensiefen, 2018). 
-When using this implementation, you can also cite this repository with the permanent DOI link
-https://doi.org/10.5281/zenodo.1415353.
+When using the CA-BAT in your own research, you can cite the original CA-BAT research paper:
+
+> Harrison, P. M. C., & Müllensiefen, D. (2018). 
+Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
+Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
+
+and this implementation:
+
+> Harrison, P. M. C., & Müllensiefen, D. (2018). 
+Computerised Adaptive Beat Alignment Test (CA-BAT), psychTestR implementation.
+https://doi.org/10.5281/zenodo.1415353
+
 We also advise mentioning the software versions you used,
 in particular the versions of the `cabat`, `psychTestR`, and `psychTestRCAT` packages.
 You can find these version numbers from R by running the following commands:
