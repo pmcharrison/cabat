@@ -98,7 +98,12 @@ an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
 or alternatively by passing it as a URL parameter to the test browser,
 eg. http://127.0.0.1:4412/?language=DE (note that the `p_id` argument must be empty).
 
-### Retrieving results
+### Results
+
+CA-BAT scores are given on an [item response theory](https://en.wikipedia.org/wiki/Item_response_theory) metric.
+These scores are similar to *z*-scores: 
+an average score is about 0, and the typical standard deviation is around 1.
+See [Harrison et al. (2018)](https://doi.org/10.1038/s41598-018-30318-8) for more precise benchmarks.
 
 psychTestR provides several ways of retrieving test results (see http://psychtestr.com/).
 Most are accessed through the test's admin panel.
