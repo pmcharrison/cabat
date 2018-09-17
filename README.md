@@ -98,6 +98,26 @@ an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
 or alternatively by passing it as a URL parameter to the test browser,
 eg. http://127.0.0.1:4412/?language=DE (note that the `p_id` argument must be empty).
 
+### Retrieving results
+
+psychTestR provides several ways of retrieving test results (see http://psychtestr.com/).
+Most are accessed through the test's admin panel.
+
+* If you are just interested in the participants' final scores,
+the easiest solution is usually to download the results in CSV format from the admin panel.
+* If you are interested in trial-by-trial results, you can run the command
+`compile_trial_by_trial_results()` from the R console
+(having loaded the MDT package using `library(mdt)`).
+Type `?compile_trial_by_trial_results()` for more details.
+* If you want still more detail, you can examine the individual RDS output files using `readRDS()`. 
+Detailed results are stored as the 'metadata' attribute for the ability field. 
+You can access it something like this: 
+
+``` r
+x <- readRDS("output/results/id=1&p_id=german_test&save_id=1&pilot=false&complete=true.rds")
+attr(x$MDT$ability, "metadata")
+```
+
 ## Installation instructions (Shiny Server)
 
 1. Complete the installation instructions described under 'Local use'.
