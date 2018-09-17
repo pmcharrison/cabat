@@ -107,7 +107,7 @@ Most are accessed through the test's admin panel.
 the easiest solution is usually to download the results in CSV format from the admin panel.
 * If you are interested in trial-by-trial results, you can run the command
 `compile_trial_by_trial_results()` from the R console
-(having loaded the MDT package using `library(mdt)`).
+(having loaded the CA-BAT package using `library(cabat)`).
 Type `?compile_trial_by_trial_results()` for more details.
 * If you want still more detail, you can examine the individual RDS output files using `readRDS()`. 
 Detailed results are stored as the 'metadata' attribute for the ability field. 
@@ -115,7 +115,7 @@ You can access it something like this:
 
 ``` r
 x <- readRDS("output/results/id=1&p_id=german_test&save_id=1&pilot=false&complete=true.rds")
-attr(x$MDT$ability, "metadata")
+attr(x$BAT$ability, "metadata")
 ```
 
 ## Installation instructions (Shiny Server)
