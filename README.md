@@ -1,18 +1,39 @@
 # Computerised Adaptive Beat Alignment Test (CA-BAT) 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
+
 Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
-This test is detailed in the following paper: Harrison, P. M. C., & Müllensiefen, D. (2018). 
+The CA-BAT is an adaptive test of beat perception ability.
+We invite you to try the test [here](http://shiny.pmcharrison.com/cabat-demo), and
+to read the paper [here](https://doi.org/10.1038/s41598-018-30318-8).
+
+## Citation
+
+When using the CA-BAT in your own research, you can cite the original CA-BAT research paper:
+
+> Harrison, P. M. C., & Müllensiefen, D. (2018). 
 Development and validation of the Computerised Adaptive Beat Alignment Test (CA-BAT). 
 Scientific Reports, 8(12395), 1–19. https://doi.org/10.1038/s41598-018-30318-8
 
-<!-- This implementation can be cited using the following permanent link:
-https://doi.org/10.5281/zenodo.1300951 -->
+and this implementation:
 
-The demo version of the CA-BAT (http://shiny.pmcharrison.com/cabat-demo)
-gives you feedback after each question,
-but in real experiments this feedback is disabled.
-For using the test in your own studies, we recommend local installation (see below).
+> Harrison, P. M. C., & Müllensiefen, D. (2018). 
+Computerised Adaptive Beat Alignment Test (CA-BAT), psychTestR implementation. Zenodo.
+https://doi.org/10.5281/zenodo.1415353
+
+We also advise mentioning the software versions you used,
+in particular the versions of the `cabat`, `psychTestR`, and `psychTestRCAT` packages.
+You can find these version numbers from R by running the following commands:
+
+``` r
+library(cabat)
+library(psychTestR)
+library(psychTestRCAT)
+if (!require(devtools)) install.packages("devtools")
+x <- devtools::session_info()
+x$packages[x$packages$package %in% c("cabat", "psychTestR", "psychTestRCAT"), ]
+```
 
 ## Installation instructions (local use)
 
@@ -72,6 +93,37 @@ entering the admin panel using your admin password,
 and downloading your data.
 For more details on the psychTestR interface, 
 see http://psychtestr.com/.
+
+The CA-BAT currently supports English and German.
+You can select one of these languages by passing a language code as 
+an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
+or alternatively by passing it as a URL parameter to the test browser,
+eg. http://127.0.0.1:4412/?language=DE (note that the `p_id` argument must be empty).
+
+### Results
+
+CA-BAT scores are given on an [item response theory](https://en.wikipedia.org/wiki/Item_response_theory) metric.
+These scores are similar to *z*-scores: 
+an average score is about 0, and the typical standard deviation is around 1.
+See [Harrison & Müllensiefen (2018)](https://doi.org/10.1038/s41598-018-30318-8) for more precise benchmarks.
+
+psychTestR provides several ways of retrieving test results (see http://psychtestr.com/).
+Most are accessed through the test's admin panel.
+
+* If you are just interested in the participants' final scores,
+the easiest solution is usually to download the results in CSV format from the admin panel.
+* If you are interested in trial-by-trial results, you can run the command
+`compile_trial_by_trial_results()` from the R console
+(having loaded the CA-BAT package using `library(cabat)`).
+Type `?compile_trial_by_trial_results()` for more details.
+* If you want still more detail, you can examine the individual RDS output files using `readRDS()`. 
+Detailed results are stored as the 'metadata' attribute for the ability field. 
+You can access it something like this: 
+
+``` r
+x <- readRDS("output/results/id=1&p_id=german_test&save_id=1&pilot=false&complete=true.rds")
+attr(x$BAT$ability, "metadata")
+```
 
 ## Installation instructions (Shiny Server)
 
