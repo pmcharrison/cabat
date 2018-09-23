@@ -1,3 +1,7 @@
+# cabat 0.3.0
+
+* Adding French support
+
 # cabat 0.2.0
 
 * Introducing compile_trial_by_trial_results()
