@@ -94,7 +94,7 @@ and downloading your data.
 For more details on the psychTestR interface, 
 see http://psychtestr.com/.
 
-The CA-BAT currently supports English and German.
+The CA-BAT currently supports English (EN), French (FR), and German (DE).
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
 or alternatively by passing it as a URL parameter to the test browser,
