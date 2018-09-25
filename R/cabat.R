@@ -55,6 +55,11 @@
 #' pair of possible items, following the procedure used in the original CA-BAT paper.
 #' We recommend leaving this option disabled.
 #' @param dict The psychTestR dictionary used for internationalisation.
+#' @note Versions <= 0.3.0 of this package experimented with weighted likelihood
+#' ability estimation for item selection. Pilot testing found this approach
+#' to be problematic, tending to overpenalise the participant for early mistakes.
+#' Current versions of the package therefore revert to Bayes modal
+#' ability estimation for item selection, consistent with the original CA-BAT paper.
 #' @export
 cabat <- function(
   num_items = 25L,

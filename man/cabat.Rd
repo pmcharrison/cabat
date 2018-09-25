@@ -84,3 +84,10 @@ For demoing the CA-BAT, consider using \code{\link{demo_cabat}()}.
 For a standalone implementation of the CA-BAT,
 consider using \code{\link{standalone_cabat}()}.
 }
+\note{
+Versions <= 0.3.0 of this package experimented with weighted likelihood
+ability estimation for item selection. Pilot testing found this approach
+to be problematic, tending to overpenalise the participant for early mistakes.
+Current versions of the package therefore revert to Bayes modal
+ability estimation for item selection, consistent with the original CA-BAT paper.
+}
