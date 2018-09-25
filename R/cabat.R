@@ -1,13 +1,13 @@
-#' CABAT
+#' CA-BAT
 #'
 #' This function defines a CA-BAT module for incorporation into a
 #' psychTestR timeline.
 #' Use this function if you want to include the CA-BAT in a
 #' battery of other tests, or if you want to add custom psychTestR
 #' pages to your test timeline.
-#' For demoing the CA-BAT, consider using \link{\code{demo_cabat}}.
+#' For demoing the CA-BAT, consider using \code{\link{demo_cabat}()}.
 #' For a standalone implementation of the CA-BAT,
-#' consider using \link{\code{standalone_cabat}}.
+#' consider using \code{\link{standalone_cabat}()}.
 #' @param num_items (Integer scalar) Number of items in the test.
 #' @param take_training (Logical scalar) Whether to include the training phase.
 #' @param label (Character scalar) Label to give the CA-BAT results in the output file.
@@ -19,11 +19,11 @@
 #' hosting the practice items audio (typically a publicly accessible web directory).
 #' @param next_item.criterion (Character scalar)
 #' Criterion for selecting successive items in the adaptive test.
-#' See the \code{criterion} argument in \link[catR]{nextItem} for possible values.
+#' See the \code{criterion} argument in \code{\link[catR]{nextItem}} for possible values.
 #' \code{"bOpt"} corresponds to the setting used in the original CA-BAT paper.
 #' @param next_item.estimator (Character scalar)
 #' Ability estimation method used for selecting successive items in the adaptive test.
-#' See the \code{method} argument in \link[catR]{thetaEst} for possible values.
+#' See the \code{method} argument in \code{\link[catR]{thetaEst}} for possible values.
 #' \code{"BM"}, Bayes modal,
 #' corresponds to the setting used in the original CA-BAT paper.
 #' \code{"WL"}, weighted likelihood,
@@ -33,13 +33,28 @@
 #' for item selection.
 #' Ignored if \code{next_item.estimator} is not a Bayesian method.
 #' Defaults to \code{"norm"} for a normal distribution.
-#' See the \code{priorDist} argument in \link[catR]{thetaEst} for possible values.
-#' @param next_item.prior_par
-#' Parameters for the normal
+#' See the \code{priorDist} argument in \code{\link[catR]{thetaEst}} for possible values.
+#' @param next_item.prior_par (Numeric vector, length 2)
+#' Parameters for the prior distribution;
+#' see the \code{priorPar} argument in \code{\link[catR]{thetaEst}} for details.
+#' Ignored if \code{next_item.estimator} is not a Bayesian method.
+#' The dfeault is \code{c(0, 1)}.
 #' @param final_ability.estimator
-#' @param constrain_answers
-#' @param fix_first_item
-#' @param dict
+#' Estimation method used for the final ability estimate.
+#' See the \code{method} argument in \code{\link[catR]{thetaEst}} for possible values.
+#' The default is \code{"WL"}, weighted likelihood,
+#' which corresponds to the setting used in the original CA-BAT paper.
+#' If a Bayesian method is chosen, its prior distribution will be defined
+#' by the \code{next_item.prior_dist} and \code{next_item.prior_par} arguments.
+#' @param constrain_answers (Logical scalar)
+#' If \code{TRUE}, then item selection will be constrained so that the
+#' correct answers are distributed as evenly as possible over the course of the test.
+#' We recommend leaving this option disabled.
+#' @param fix_first_item (Logical scalar)
+#' If \code{TRUE}, then the first test item will be constrained to a fixed
+#' pair of possible items, following the procedure used in the original CA-BAT paper.
+#' We recommend leaving this option disabled.
+#' @param dict The psychTestR dictionary used for internationalisation.
 #' @export
 cabat <- function(
   num_items = 25L,
@@ -58,7 +73,7 @@ cabat <- function(
   dict = cabat::cabat_dict
 ) {
   stopifnot(is.scalar.integerlike(num_items),
-            is.scalar.logical(take_training)
+            is.scalar.logical(take_training),
             is.scalar.character(label),
             is.scalar.character(item_bank_audio),
             is.scalar.character(practice_items),
