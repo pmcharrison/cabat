@@ -1,3 +1,5 @@
+# cabat 0.4.0
+
 The package is now properly documented.
 
 Changes to default arguments for `cabat()`, `demo_cabat()`,
