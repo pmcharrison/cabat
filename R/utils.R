@@ -25,3 +25,11 @@ tagify <- function(x) {
 is.null.or <- function(x, f) {
   is.null(x) || f(x)
 }
+
+is.integerlike <- function(x) {
+  all(round(x) == x)
+}
+
+is.scalar.integerlike <- function(x) {
+  is.scalar(x) && is.integerlike(x)
+}

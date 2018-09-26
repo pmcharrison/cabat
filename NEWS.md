@@ -1,3 +1,13 @@
+# cabat 0.4.0
+
+The package is now properly documented.
+
+Changes to default arguments for `cabat()`, `demo_cabat()`,
+and `standalone_cabat()`:
+
+- next_item.estimator now defaults to `'BM'`, not `'WL'`;
+- fix_first_item now defaults to `FALSE`, not `TRUE`.
+
 # cabat 0.3.0
 
 * Adding French support
