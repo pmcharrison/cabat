@@ -102,10 +102,17 @@ eg. http://127.0.0.1:4412/?language=DE (note that the `p_id` argument must be em
 
 ### Results
 
-CA-BAT scores are given on an [item response theory](https://en.wikipedia.org/wiki/Item_response_theory) metric.
-These scores are similar to *z*-scores: 
-an average score is about 0, and the typical standard deviation is around 1.
-See [Harrison & Müllensiefen (2018)](https://doi.org/10.1038/s41598-018-30318-8) for more precise benchmarks.
+The main output from the CA-BAT is an `ability` score,
+corresponding to the ability estimate for the participant.
+It is computed from the underlying item response model and ranges approximately from -4 to +4.
+A secondary output is an `ability_sem` score, 
+corresponding to the standard error of measurement for the ability estimate;
+again, it is computed from the underlying IRT model.
+For most applications you would only use the `ability` value,
+unless using a statistical analysis technique that allows you to specify measurement error explicitly.
+For more information about item response theory, see the [Wikipedia](https://en.wikipedia.org/wiki/Item_response_theory) article;
+for more information about CA-BAT scores, see
+[Harrison & Müllensiefen, 2018](https://doi.org/10.1038/s41598-018-30318-8).
 
 psychTestR provides several ways of retrieving test results (see http://psychtestr.com/).
 Most are accessed through the test's admin panel.
