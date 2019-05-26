@@ -1,3 +1,5 @@
+# cabat 0.5.0
+
 * Added Russian support.
 
 # cabat 0.4.0
