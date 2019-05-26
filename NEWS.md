@@ -1,3 +1,5 @@
+# cabat 0.6.0
+
 * Updated to latest psychTestR dictionary version.
 
 # cabat 0.5.0
