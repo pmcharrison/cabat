@@ -1,3 +1,5 @@
+* Updated to latest psychTestR dictionary version.
+
 # cabat 0.5.0
 
 * Added Russian support.
