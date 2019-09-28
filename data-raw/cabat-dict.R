@@ -7,5 +7,10 @@ stopifnot(!anyDuplicated(input$key),
           all(input$key == russian$key))
 input$RU <- russian$RU
 
+spanish <- read.csv("data-raw/dict-spanish.csv", stringsAsFactors = FALSE)
+names(spanish)[[1]] <- "key"
+stopifnot(all(input$key == spanish$key))
+input$ES <- spanish$ES
+
 cabat_dict <- psychTestR::i18n_dict$new(input)
 usethis::use_data(cabat_dict, overwrite = TRUE)

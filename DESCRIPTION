@@ -1,6 +1,6 @@
 Package: cabat
 Title: R Implementation of the Computerised Beat Alignment Test (CA-BAT)
-Version: 0.6.0
+Version: 0.7.0
 Authors@R: person("Peter", "Harrison", email = "p.m.c.harrison@qmul.ac.uk", role = c("aut", "cre"))
 Description: R Implementation of the Computerised Beat Alignment Test (CA-BAT).
 Depends: R (>= 3.4.0)
@@ -9,11 +9,11 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     methods,
-    psychTestR (>= 2.6.0),
+    psychTestR (>= 2.8.0),
     psychTestRCAT (>= 1.5.0),
     shiny (>= 1.3.2)
 Suggests: 
-    testthat (>= 2.0.1),
+    testthat (>= 2.1.1),
     usethis (>= 1.5.0)
 Byte-Compile: yes
 RoxygenNote: 6.1.1

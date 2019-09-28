@@ -1,6 +1,7 @@
 # Computerised Adaptive Beat Alignment Test (CA-BAT) 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
+[![Travis build status](https://travis-ci.org/pmcharrison/cabat.svg?branch=master)](https://travis-ci.org/pmcharrison/cabat)
 
 Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
@@ -34,6 +35,14 @@ if (!require(devtools)) install.packages("devtools")
 x <- devtools::session_info()
 x$packages[x$packages$package %in% c("cabat", "psychTestR", "psychTestRCAT"), ]
 ```
+
+## Acknowledgements
+
+We are grateful to the following individuals for translating the CA-BAT
+into new languages:
+
+- Pauline Larrouy-Maestri (French)
+- Yina Quique (Spanish)
 
 ## Installation instructions (local use)
 
@@ -94,7 +103,8 @@ and downloading your data.
 For more details on the psychTestR interface, 
 see http://psychtestr.com/.
 
-The CA-BAT currently supports English (EN), French (FR), German (DE), and Russian (RU).
+The CA-BAT currently supports English (EN), French (FR), German (DE), Russian (RU),
+and Spanish (ES).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
