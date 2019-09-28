@@ -43,6 +43,8 @@ into new languages:
 
 - Pauline Larrouy-Maestri (French)
 - Yina Quique (Spanish)
+- Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
+- Elina Tsigeman and Maxim Likhanov (Russian)
 
 ## Installation instructions (local use)
 
