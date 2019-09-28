@@ -35,6 +35,14 @@ x <- devtools::session_info()
 x$packages[x$packages$package %in% c("cabat", "psychTestR", "psychTestRCAT"), ]
 ```
 
+## Acknowledgements
+
+We are grateful to the following individuals for translating the CA-BAT
+into new languages:
+
+- Pauline Larrouy-Maestri (French)
+- Yina Quique (Spanish)
+
 ## Installation instructions (local use)
 
 1. If you don't have R installed, install it from here: https://cloud.r-project.org/
@@ -94,7 +102,8 @@ and downloading your data.
 For more details on the psychTestR interface, 
 see http://psychtestr.com/.
 
-The CA-BAT currently supports English (EN), French (FR), German (DE), and Russian (RU).
+The CA-BAT currently supports English (EN), French (FR), German (DE), Russian (RU),
+and Spanish (ES).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
