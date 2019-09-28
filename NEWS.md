@@ -1,3 +1,5 @@
+# cabat 0.7.0
+
 * Added Spanish support (thanks to Yina Quique!).
 * Updated to reflect latest version of `psychTestR`.
 
