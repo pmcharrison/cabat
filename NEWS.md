@@ -1,3 +1,6 @@
+* Added Spanish support (thanks to Yina Quique!).
+* Updated to reflect latest version of `psychTestR`.
+
 # cabat 0.6.0
 
 * Updated to latest psychTestR dictionary version.
