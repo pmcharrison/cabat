@@ -1,3 +1,5 @@
+* Minor updates to Spanish translations by Yina Quique.
+
 # cabat 0.7.0
 
 * Added Spanish support (thanks to Yina Quique!).

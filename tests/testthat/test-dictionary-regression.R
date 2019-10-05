@@ -21,10 +21,10 @@ test_that("may-2019", {
                current$RU)
 })
 
-test_that("sep-2019", {
+test_that("oct-2019", {
   old_1 <- local({
     env <- new.env()
-    load(system.file("regression-tests/dictionaries/dict-sep-2019.rda",
+    load(system.file("regression-tests/dictionaries/dict-oct-2019.rda",
                      package = "cabat",
                      mustWork = TRUE),
          envir = env)
