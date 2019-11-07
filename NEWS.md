@@ -1,3 +1,5 @@
+* Updated for latest version of psychTestR.
+
 # cabat 0.8.0
 
 * Minor updates to Spanish translations by Yina Quique.
