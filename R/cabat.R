@@ -91,12 +91,10 @@ cabat <- function(
   item_bank_audio <- gsub("/$", "", item_bank_audio)
   practice_items <- gsub("/$", "", practice_items)
   arg <- as.list(environment())
-  psychTestR::new_timeline(
-    c(
-      if (take_training) intro(practice_items = practice_items, dict = dict),
-      main_test(arg, dict = dict),
-      feedback
-    ), dict = dict
+  psychTestR::join(
+    if (take_training) intro(practice_items = practice_items, dict = dict),
+    main_test(arg, dict = dict),
+    feedback
   )
 }
 
