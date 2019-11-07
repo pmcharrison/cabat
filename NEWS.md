@@ -1,3 +1,5 @@
+# cabat 0.8.1
+
 * Updated for latest version of psychTestR.
 
 # cabat 0.8.0
