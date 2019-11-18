@@ -1,3 +1,5 @@
+* Switched audio from HTTP to HTTPS.
+
 # cabat 0.8.1
 
 * Updated for latest version of psychTestR.

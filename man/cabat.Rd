@@ -6,8 +6,8 @@
 \usage{
 cabat(num_items = 25L, take_training = TRUE, label = "BAT",
   feedback = cabat.feedback.no_score(),
-  item_bank_audio = "http://media.gold-msi.org/test_materials/BAT/v1/audio",
-  practice_items = "http://media.gold-msi.org/test_materials/BAT/v1/practice-items",
+  item_bank_audio = "https://media.gold-msi.org/test_materials/BAT/v1/audio",
+  practice_items = "https://media.gold-msi.org/test_materials/BAT/v1/practice-items",
   next_item.criterion = "bOpt", next_item.estimator = "BM",
   next_item.prior_dist = "norm", next_item.prior_par = c(0, 1),
   final_ability.estimator = "WL", constrain_answers = FALSE,
