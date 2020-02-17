@@ -1,3 +1,5 @@
+# cabat 0.9.0
+
 # cabat 0.8.2
 
 * Switched audio from HTTP to HTTPS.
