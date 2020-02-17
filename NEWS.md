@@ -1,6 +1,6 @@
 # cabat 0.9.0
 
-Extending feedback options.
+* Extending feedback options.
 
 # cabat 0.8.2
 

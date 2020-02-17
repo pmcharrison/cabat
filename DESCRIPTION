@@ -10,7 +10,7 @@ LazyData: true
 Imports: 
     methods,
     psychTestR (>= 2.13.2),
-    psychTestRCAT (>= 1.5.1),
+    psychTestRCAT (>= 1.6.0),
     shiny (>= 1.4.0)
 Suggests: 
     testthat (>= 2.2.1),
