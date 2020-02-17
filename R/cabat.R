@@ -11,8 +11,20 @@
 #' @param num_items (Integer scalar) Number of items in the test.
 #' @param take_training (Logical scalar) Whether to include the training phase.
 #' @param label (Character scalar) Label to give the CA-BAT results in the output file.
-#' @param feedback (Function) Defines the feedback to give the participant
-#' at the end of the test.
+#'
+#' @param feedback Defines the feedback to give the participant
+#' at the end of the test. By default no feedback is given.
+#' This can be a timeline segment (as created by \code{\link[psychTestRCAT]{new_timeline}}),
+#' a test element (as created by e.g. \code{\link[psychTestRCAT]{page}}),
+#' or a list of test elements.
+#' The following built-in choices are available
+#' see function-level documentation for details):
+#' - \code{\link{cabat.feedback.no_score}}
+#' - \code{\link{cabat.feedback.simple_score}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.graph}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.irt}}
+#' - \code{\link[psychTestRCAT]{cat.feedback.iq}}
+#'
 #' @param item_bank_audio (Character scalar) File path to the directory
 #' hosting the item bank audio (typically a publicly accessible web directory).
 #' @param practice_items (Character scalar) File path to the directory
@@ -60,6 +72,9 @@
 #' to be problematic, tending to overpenalise the participant for early mistakes.
 #' Current versions of the package therefore revert to Bayes modal
 #' ability estimation for item selection, consistent with the original CA-BAT paper.
+#'
+#' @md
+#'
 #' @export
 cabat <- function(
   num_items = 25L,
