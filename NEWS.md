@@ -1,5 +1,7 @@
 # cabat 0.9.0
 
+Extending feedback options.
+
 # cabat 0.8.2
 
 * Switched audio from HTTP to HTTPS.
