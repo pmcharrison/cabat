@@ -15,7 +15,7 @@
 #' @param feedback Defines the feedback to give the participant
 #' at the end of the test. By default no feedback is given.
 #' This can be a timeline segment (as created by \code{\link[psychTestRCAT]{new_timeline}}),
-#' a test element (as created by e.g. \code{\link[psychTestRCAT]{page}}),
+#' a test element (as created by e.g. \code{\link[psychTestR]{page}}),
 #' or a list of test elements.
 #' The following built-in choices are available
 #' see function-level documentation for details):
