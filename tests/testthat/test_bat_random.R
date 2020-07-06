@@ -2,7 +2,7 @@
 library(psychTestR)
 library(testthat)
 
-dir <- system.file("", package = "cabat", mustWork = TRUE)
+dir <- system.file("BAT", package = "cabat", mustWork = TRUE)
 
 number_items <- 20 #number of items
 
