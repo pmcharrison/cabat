@@ -1,4 +1,4 @@
-#Automated testing for BAT
+#Automated testing for CABAT
 library(psychTestR)
 library(testthat)
 
