@@ -11,10 +11,11 @@ Imports:
     methods,
     psychTestR (>= 2.13.2),
     psychTestRCAT (>= 1.6.0),
-    shiny (>= 1.4.0)
+    shiny (>= 1.4.0), 
+    stringr
 Suggests: 
     testthat (>= 2.2.1),
     usethis (>= 1.5.1)
 Byte-Compile: yes
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
