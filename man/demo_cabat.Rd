@@ -4,11 +4,14 @@
 \alias{demo_cabat}
 \title{Demo CA-BAT}
 \usage{
-demo_cabat(num_items = 10L,
+demo_cabat(
+  num_items = 10L,
   feedback = psychTestRCAT::cat.feedback.graph("BAT"),
   admin_password = "demo",
   researcher_email = "p.m.c.harrison@qmul.ac.uk",
-  dict = cabat::cabat_dict, ...)
+  dict = cabat::cabat_dict,
+  ...
+)
 }
 \arguments{
 \item{num_items}{(Integer scalar) Number of items in the test.}

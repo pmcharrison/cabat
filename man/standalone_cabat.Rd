@@ -4,10 +4,14 @@
 \alias{standalone_cabat}
 \title{Standalone CA-BAT}
 \usage{
-standalone_cabat(title = "Beat perception test",
+standalone_cabat(
+  title = "Beat perception test",
   admin_password = "replace-with-secure-password",
-  researcher_email = NULL, languages = cabat_languages(),
-  dict = cabat::cabat_dict, ...)
+  researcher_email = NULL,
+  languages = cabat_languages(),
+  dict = cabat::cabat_dict,
+  ...
+)
 }
 \arguments{
 \item{title}{(Scalar character) Title to display during testing.}

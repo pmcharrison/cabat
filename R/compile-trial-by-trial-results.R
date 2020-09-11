@@ -4,6 +4,28 @@
 #' This function is intended to be called once data have been collected
 #' for several participants; it allows the researcher to inspect
 #' CA-BAT results on a trial-by-trial level.
+#'
+#' Suppose that a participant completes 5 items in the test.
+#' They will have 5 rows in the table, corresponding to their 5 items.
+#' You can find the participant's rows by filtering by the "p_id" column.
+#' The column "num" indexes these rows: 1 corresponds to the first item
+#' they took, 2 corresponds to the second item, and so on.
+#' The ability scores are given in the "ability_" columns; they tell
+#' you the participant's estimated ability after having answered that
+#' particular item. To get the participant's final estimated ability score,
+#' look for the highest value of "num", in this case 5. Then look up the ability
+#' score within that row.
+#'
+#' There are different columns for the different ability
+#' estimation methods, make sure you are looking at the right one.
+#' The correct one to look at corresponds to the \code{final_ability.estimator}
+#' parameter in your adaptive test. We most commonly use weighted likelihood,
+#' i.e. "WL". This is stored in the column "ability_WL".
+#' If you are unsure that you are looking at the right column,
+#' you can compare the results to the CSV results that you can download
+#' from the psychTestR admin interface, which provide
+#' solely the participant's final ability score.
+#'
 #' @param in_dir Results directory to process.
 #' @param label Label that the CA-BAT's results were saved under (typically "BAT").
 #' @param combine Whether to combine results into one big data frame,

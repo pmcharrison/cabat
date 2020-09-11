@@ -1,3 +1,5 @@
+* Updated `compile_trial_by_trial_results` documentation.
+
 # cabat 0.9.0
 
 * Extending feedback options.
