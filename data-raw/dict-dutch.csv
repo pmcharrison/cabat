@@ -1,0 +1,27 @@
+﻿ID1,NL
+ABAT_0001_I_0001_1,Welkom bij de ritmeherkenningstest! 
+ABAT_0002_I_0001_1,Deze test meet uw vermogen om het ritme in een muziekfragment  te herkenen. \\ Er worden enkele muziekfragmenten afgespeeld. In elk fragment hoort u muziek samen met een **pieptoon** (een metronoom). \\Het is uw taak om te beslissen of de pieptoon **in** of **uit** het ritme van de muziek is. 
+ABAT_0003_I_0001_1,Klik op 'Volgende' om enkele voorbeelden te horen.
+ABAT_0004_I_0001_1,Voorbeeld - **In** het ritme\\In dit voorbeeld is de pieptoon **in** het ritme van de muziek.
+ABAT_0005_I_0001_1,Uw ritmeherkennings IQ was:
+ABAT_0006_I_0001_1,Voorbeeld - **Uit** het ritme\\In dit voorbeeld zijn de pieptonen **uit** het ritme van de muziek. 
+ABAT_0007_I_0001_1,Ritmeherkennings IQ
+ABAT_0008_I_0001_1,"In deze test hoort u twee versies van hetzelfde muziekfragment met pieptonen. \\ In de ene versie zijn de pieptonen **in** het ritme, in de andere zijn de pieptonen **uit** het ritme. \\Bepaal of de pieptonen in het eerste of tweede fragment **in** het ritme waren."
+ABAT_0009_I_0001_1,**Voorbeeldvraag {{no_example}}/2**\\In welk fragment zijn de pieptonen **in** het ritme?
+ABAT_0010_I_0001_1,Eerste
+ABAT_0011_I_0001_1,Goed!
+ABAT_0012_I_0001_1,**{{feedback}}**\\ Klik op 'Volgende' om nog een voorbeeld te proberen.
+ABAT_0013_I_0001_1,Fout!
+ABAT_0014_I_0001_1,"**{{feedback}}**\\ Klik op 'Vorige' om nogmaals de instructies  te lezen en de voorbeeldvragen te oefenen,\\of klik op 'Volgende' om naar de hoofdtest te gaan."
+ABAT_0015_I_0001_1,Tweede
+ABAT_0016_I_0001_1,U begint nu met de hoofdtest waarvan de resultaten zullen worden opgeslagen. U ontvangt geen feedback meer. Veel succes!
+ABAT_0017_I_0001_1,Vraag {{num_question}} van {{test_length}}
+ABAT_0018_I_0001_1,"Uw browser ondersteunt geen audio. Deze test werkt niet zonder audio, sorry!"
+ABAT_0019_I_0001_1,"In één van de versies zijn de pieptonen in het ritme, in de andere zijn ze uit het ritme.\\In welke versie waren de pieptonen **in** het ritme? Als u het antwoord niet weet, selecteer dan uw beste schatting."
+ABAT_0020_I_0001_1,U heeft de ritmeherkenningstest afgerond!
+ABAT_0021_I_0001_1,Volgende
+ABAT_0022_I_0001_1,Vorige
+enter_p_id,Введите логин участника.
+results_have_been_saved,Ваш результат записан.
+you_may_close_browser,Теперь можно закрыть окно браузера.
+demo_intro,"Welcome to the **Computerised Adaptive Beat Alignment Test**!\\This test adapts to your performance. If you do well, you will be given harder items.\\Usually this adaptive procedure is hidden from the participant. For this demonstration, however, we will show your running ability score and corresponding difficulty level on each trial."

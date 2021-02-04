@@ -1,3 +1,6 @@
+* Added support for Dutch language.
+* Removed startup message about old changes to the package.
+
 # cabat 0.9.1
 
 * Updated `compile_trial_by_trial_results` documentation.
