@@ -21,7 +21,8 @@ ABAT_0019_I_0001_1,"In één van de versies zijn de pieptonen in het ritme, in d
 ABAT_0020_I_0001_1,U heeft de ritmeherkenningstest afgerond!
 ABAT_0021_I_0001_1,Volgende
 ABAT_0022_I_0001_1,Vorige
-enter_p_id,Введите логин участника.
-results_have_been_saved,Ваш результат записан.
-you_may_close_browser,Теперь можно закрыть окно браузера.
-demo_intro,"Welcome to the **Computerised Adaptive Beat Alignment Test**!\\This test adapts to your performance. If you do well, you will be given harder items.\\Usually this adaptive procedure is hidden from the participant. For this demonstration, however, we will show your running ability score and corresponding difficulty level on each trial."
+enter_p_id,Vul uw ID in.
+results_have_been_saved,Uw resultaten zijn opgeslagen.
+you_may_close_browser,U mag het scherm sluiten.
+demo_intro,"Welkom bij de **ritmeherkenningstest**!\\Deze test past zich aan uw prestaties aan. Als u het goed doet, dan krijgt u moeilijkere items.\\Meestal is deze adaptieve procedure verborgen voor de deelnemer.  Voor deze demonstratie laten we echter uw hardloopvaardigheidsscore en bijbehorende moeilijkheidsgraad voor elke proef zien.
+"
