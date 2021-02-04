@@ -1,3 +1,5 @@
+# cabat 0.10.0
+
 * Added support for Dutch language.
 * Removed startup message about old changes to the package.
 
