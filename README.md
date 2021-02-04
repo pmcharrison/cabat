@@ -45,6 +45,7 @@ into new languages:
 - Yina Quique (Spanish)
 - Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
 - Elina Tsigeman and Maxim Likhanov (Russian)
+- Jochum van 't Hooft (Dutch)
 
 ## Installation instructions (local use)
 
