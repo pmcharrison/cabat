@@ -46,6 +46,7 @@ into new languages:
 - Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
 - Elina Tsigeman and Maxim Likhanov (Russian)
 - Jochum van 't Hooft (Dutch)
+- Elvira Brattico (Italian)
 
 ## Installation instructions (local use)
 
@@ -211,4 +212,5 @@ Update `data-raw/cabat-dict.R`, adding a new four-line section for your new lang
 following the lines used to add previous languages.
 Run the file and commit the changes to Git.
 Update the `cabat_languages` function in `languages.R` to include the new language.
+Update the languages section in `README.md` to credit the translator.
 Submit your changes as a merge request.
