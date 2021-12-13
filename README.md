@@ -199,3 +199,15 @@ ability estimation for item selection.
 However, current versions of the package revert to Bayes modal
 ability estimation for item selection,
 for consistency with the original CA-BAT paper.
+
+## Adding new languages
+
+See `data-raw/dict-spanish.csv` for an example of a foreign-language dictionary.
+Create a new dictionary for your new language following this format.
+Prepare a merge request for submitting your changes, 
+perhaps using a fork of the original repository.
+Place the file in `data-raw`.
+Update `data-raw/cabat-dict.R`, adding a new four-line section for your new language,
+following the lines used to add previous languages.
+Run the file and commit the changes to Git.
+Submit your changes as a merge request.

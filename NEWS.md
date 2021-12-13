@@ -1,3 +1,5 @@
+* Added Italian translations.
+
 # cabat 0.10.1
 
 * Fixed missing Dutch translations.

@@ -17,5 +17,10 @@ names(dutch)[[1]] <- "key"
 stopifnot(all(input$key == dutch$key))
 input$NL <- dutch$NL
 
+italian <- read.csv("data-raw/dict-italian.csv", stringsAsFactors = FALSE)
+names(italian)[[1]] <- "key"
+stopifnot(all(input$key == italian$key))
+input$IT <- italian$IT
+
 cabat_dict <- psychTestR::i18n_dict$new(input)
 usethis::use_data(cabat_dict, overwrite = TRUE)

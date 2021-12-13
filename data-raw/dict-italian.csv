@@ -1,0 +1,27 @@
+ID,EN,IT
+ABAT_0001_I_0001_1,Welcome to the adaptive beat perception test!,Benvenuto/a al test adattivo di percezione ritmica!
+ABAT_0002_I_0001_1,This test assesses your ability to recognise the beat in a piece of music.\\ You will be played some music clips. In each clip you will hear some music together with a **beep-track**.\\  Your task is to decide whether the beep-track is **on** or **off** the beat.,Questo test valuta la tua abilità di riconoscere la pulsazione ritmica in un brano musicale. \\ Ti saranno proposti dei frammenti musicali. In ognuno ascolterai della musica associata ad una serie di **bip**. Il tuo compito è decidere se i bip sono sincronizzati o non sincronizzati con il ritmo del brano musicale.
+ABAT_0003_I_0001_1,Click 'Next' to hear some examples.,"Clicca su ""Continua"" per ascoltare alcuni esempi."
+ABAT_0004_I_0001_1,Example - **On** the beat\\In this example the beeps are **on** the beat of the music.,"Esempio di **sincronia** con il ritmo \\ In questo esempio, i bip sono **in sincronia** con il ritmo della musica."
+ABAT_0005_I_0001_1,Your Beat Perception IQ was:,Il tuo punteggio di percezione ritmica è
+ABAT_0006_I_0001_1,Example - **Off** the beat\\In this example the beeps are **off** the beat of the music.,"Esempio di **fuori sincronia** con il ritmo \\ In questo esempio, i bip sono **fuori sincronia**  con il ritmo della musica"
+ABAT_0007_I_0001_1,Beat Perception IQ,Punteggio di percezione ritmica
+ABAT_0008_I_0001_1,"In the test you will be played two versions of the same music clip, one after the other.\\ One version will have beeps **on** the beat, and the other will have beeps **off** the beat.\\ Your task is to decide whether the clip with beeps **on** the beat came first or second.","In questo test, ascolterai due versioni dello stesso brano musicale, uno dopo l'altro. \\ Una versione avrà i bip **nel** ritmo, nell'altra i bip **fuori** dal ritmo \\ Il tuo compito è decidere se il brano musicale con i **bip** nel ritmo è quello ascoltato la prima o la seconda volta."
+ABAT_0009_I_0001_1,**Example question {{no_example}}/2**\\Which clip had beeps **on** the beat?,** Esempio {{no_example}}/2**\\  Che brano musicale aveva i bip **nel** ritmo?
+ABAT_0010_I_0001_1,First,Il primo
+ABAT_0011_I_0001_1,Correct!,Giusto!
+ABAT_0012_I_0001_1,**{{feedback}}**\\Press 'Continue' to try another example.,{{no_example}}/2**\\Premi 'Continua' per fare pratica con un altro esempio.
+ABAT_0013_I_0001_1,Incorrect.,Sbagliato.
+ABAT_0014_I_0001_1,"**{{feedback}}**\\Press 'Go back' to read the instructions and try the examples again,\\or press 'Next' to continue to the main test.","**{{feedback}}**\\ Premi ""Indietro"" per leggere di nuovo le istruzioni e fare pratica con gli esempi, \\ o premi ""Continua"" per proseguire con il test principale."
+ABAT_0015_I_0001_1,Second,La seconda
+ABAT_0016_I_0001_1,"You are about to start the main test, where your results will be recorded.\\You won't receive any feedback for this stage. Good luck!",Stai per iniziare il test principale dove saranno registrati i tuoi risultati \\ Non riceverai commenti in questa parte. Buona fortuna!
+ABAT_0017_I_0001_1,Question **{{num_question}}** out of **{{test_length}}**,Domanda **{{num_question}}** di **{{test_length}}**
+ABAT_0018_I_0001_1,"Your browser doesn't support audio. This test won't work without audio, sorry!","Il tuo browser non supporta l'audio. Purtroppo, questo test non funziona senza audio!"
+ABAT_0019_I_0001_1,"One of these clips has beeps on the beat, the other off the beat.\\ Which clip had beeps **on** the beat? If you don't know, give your best guess!","Uno di questi brani ha i bip nel ritmo, l'altro fuori dal ritmo. \\  Che brano musicale aveva i **bip* nel ritmo? Se non lo sai con certezza, prova a dare la tua risposta migliore!"
+ABAT_0020_I_0001_1,You completed the beat perception test!,Hai completato il test di percezione ritmica!
+ABAT_0021_I_0001_1,Next,Continua
+ABAT_0022_I_0001_1,Go back,Indietro
+enter_p_id,Please enter your participant ID.,"Per favore, inserisci il tuo codice partecipante."
+results_have_been_saved,Your results have been saved.,I tuoi risultati sono stati salvati.
+you_may_close_browser,You may now close the browser window.,Puoi chiudere la finestra del tuo browser.
+demo_intro,"Welcome to the **Computerised Adaptive Beat Alignment Test**!\\This test adapts to your performance. If you do well, you will be given harder items.\\Usually this adaptive procedure is hidden from the participant. For this demonstration, however, we will show your running ability score and corresponding difficulty level on each trial.","Benvenuto/a al **Test computerizzato adattivo di percezione ritmica**!\\Questo test si adatta alle tue prestazioni. Se rispondi bene, ti verranno proposte prove più difficili.\\Di solito questa procedura adattiva è nascosta al partecipante. Per questa dimostrazione, tuttavia, mostreremo il tuo punteggio e il livello di difficoltà corrispondente in ogni prova."
