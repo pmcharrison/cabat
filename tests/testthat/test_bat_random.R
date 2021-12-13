@@ -52,7 +52,7 @@ q <- 1
 for (i in sample(1:2, number_items, replace=TRUE)){
   app$expect_ui_text(paste("Question", q, "out of", number_items, "One of these clips has beeps on the beat, the other off the beat. Which clip had beeps on the beat? If you don't know, give your best guess! Click here to play First Second"))
   app$click(i)
-  print(paste("answer id =", i))
+  # print(paste("answer id =", i))
   q <- q + 1
 }
 

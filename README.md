@@ -46,6 +46,7 @@ into new languages:
 - Dania Hollemann, Klaus Frieler, Daniel Müllensiefen (German)
 - Elina Tsigeman and Maxim Likhanov (Russian)
 - Jochum van 't Hooft (Dutch)
+- Elvira Brattico (Italian)
 
 ## Installation instructions (local use)
 
@@ -107,7 +108,7 @@ For more details on the psychTestR interface,
 see http://psychtestr.com/.
 
 The CA-BAT currently supports English (EN), French (FR), German (DE), Russian (RU),
-and Spanish (ES).
+Spanish (ES), and Italian (IT).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
@@ -199,3 +200,19 @@ ability estimation for item selection.
 However, current versions of the package revert to Bayes modal
 ability estimation for item selection,
 for consistency with the original CA-BAT paper.
+
+## Adding new languages
+
+See `data-raw/dict-spanish.csv` for an example of a foreign-language dictionary.
+Create a new dictionary for your new language following this format.
+Prepare a merge request for submitting your changes, 
+perhaps using a fork of the original repository.
+Place the file in `data-raw`.
+Update `data-raw/cabat-dict.R`, adding a new four-line section for your new language,
+following the lines used to add previous languages.
+Run the file and commit the changes to Git.
+Update the `cabat_languages` function in `languages.R` to include the new language.
+Update the languages section in `README.md` to credit the translator.
+Rebuild the R package locally and test that you can use the test with
+your new translations.
+Submit your changes as a merge request.
