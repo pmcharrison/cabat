@@ -1,3 +1,5 @@
+# cabat 0.11.0
+
 * Added Italian translations.
 
 # cabat 0.10.1
