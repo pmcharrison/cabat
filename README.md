@@ -1,7 +1,7 @@
 # Computerised Adaptive Beat Alignment Test (CA-BAT) 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1415353.svg)](https://doi.org/10.5281/zenodo.1415353)
-[![Travis build status](https://travis-ci.org/pmcharrison/cabat.svg?branch=master)](https://travis-ci.org/pmcharrison/cabat)
+[![R-CMD-check](https://github.com/pmcharrison/cabat/workflows/R-CMD-check/badge.svg)](https://github.com/pmcharrison/cabat/actions)
 
 Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
