@@ -210,4 +210,5 @@ Place the file in `data-raw`.
 Update `data-raw/cabat-dict.R`, adding a new four-line section for your new language,
 following the lines used to add previous languages.
 Run the file and commit the changes to Git.
+Update the `cabat_languages` function in `languages.R` to include the new language.
 Submit your changes as a merge request.
