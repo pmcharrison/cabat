@@ -24,8 +24,8 @@ at the bottom of the screen so that online participants can ask for help.}
 
 \item{languages}{(Character vector)
 Determines the languages available to participants.
-Possible languages include English (\code{"EN"}), French (\code{"French"}),
-and German (\code{"DE"}).
+The first language is selected by default.
+Defaults to the value returned by \code{\link{cabat_languages}()}.
 The first language is selected by default}
 
 \item{dict}{The psychTestR dictionary used for internationalisation.}
