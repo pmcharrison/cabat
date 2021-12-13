@@ -213,4 +213,6 @@ following the lines used to add previous languages.
 Run the file and commit the changes to Git.
 Update the `cabat_languages` function in `languages.R` to include the new language.
 Update the languages section in `README.md` to credit the translator.
+Rebuild the R package locally and test that you can use the test with
+your new translations.
 Submit your changes as a merge request.
