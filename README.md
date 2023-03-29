@@ -108,7 +108,7 @@ For more details on the psychTestR interface,
 see http://psychtestr.com/.
 
 The CA-BAT currently supports English (EN), French (FR), German (DE), Russian (RU),
-Spanish (ES), and Italian (IT).
+Spanish (ES), Latvian (LV), and Italian (IT).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
