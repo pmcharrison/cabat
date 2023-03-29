@@ -22,5 +22,12 @@ names(italian)[[1]] <- "key"
 stopifnot(all(input$key == italian$key))
 input$IT <- italian$IT
 
+latvian <- read.csv("data-raw/dict-latvian.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+names(latvian)[[1]] <- "key"
+names(latvian)[[2]] <- "LV"
+stopifnot(!anyDuplicated(input$key),
+          all(input$key == latvian$key))
+input$LV <- latvian$LV
+
 cabat_dict <- psychTestR::i18n_dict$new(input)
 usethis::use_data(cabat_dict, overwrite = TRUE)

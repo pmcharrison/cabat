@@ -1,3 +1,5 @@
+* Added Latvian support.
+
 # cabat 0.11.0
 
 * Added Italian translations.

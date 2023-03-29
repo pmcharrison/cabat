@@ -8,6 +8,7 @@ cabat_languages <- function() {
     French = "fr",
     German = "de",
     Italian = "it",
-    Spanish = "es"
+    Spanish = "es",
+    Latvian = "lv"
   )
 }
