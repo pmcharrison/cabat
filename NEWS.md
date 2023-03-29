@@ -1,3 +1,5 @@
+# cabat 0.12.0
+
 * Added Latvian support.
 
 # cabat 0.11.0
