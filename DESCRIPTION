@@ -1,6 +1,6 @@
 Package: cabat
 Title: R Implementation of the Computerised Beat Alignment Test (CA-BAT)
-Version: 0.12.0
+Version: 0.12.1
 Authors@R: person("Peter", "Harrison", email = "p.m.c.harrison@qmul.ac.uk", role = c("aut", "cre"))
 Description: R Implementation of the Computerised Beat Alignment Test (CA-BAT).
 Depends: R (>= 3.4.0)

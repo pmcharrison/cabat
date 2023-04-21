@@ -1,3 +1,5 @@
+# cabat 0.12.1
+
 * Fix typo in Latvian test.
 
 # cabat 0.12.0
