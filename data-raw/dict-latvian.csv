@@ -15,7 +15,7 @@
 "ABAT_0014_I_0001_1","**{{feedback}}**\\Spied 'Atgriezties atpakal', lai izlasitu instrukcijas un velreiz izmeginatu piemerus,\\vai spied 'Talak', lai parietu pie galvena testa."
 "ABAT_0015_I_0001_1","Otraja"
 "ABAT_0016_I_0001_1","Tagad tu pariesi pie galvena testa. Testa rezultati tiks saglabati.\\Tu nesanemsi atgriezenisko saiti. Veiksmi!"
-"ABAT_0017_I_0001_1","Jautajums**{{num_question}}** no **{{test_length}}**."
+"ABAT_0017_I_0001_1","Jautajums **{{num_question}}** no **{{test_length}}**."
 "ABAT_0018_I_0001_1","Tava parlukprogramma neatbalsta audio. Atvaino, šis tests nestradas bez audio!"
 "ABAT_0019_I_0001_1","Viena muzikas fragmenta pikstieni **IR** pulsa, bet otra tie **NAV** pulsa.\\Kura fragmenta pikstieni **IR** pulsa? Ja tu nezini, megini uzminet!"
 "ABAT_0020_I_0001_1","Tu esi pabeidzis pulsa uztveres testu!"
