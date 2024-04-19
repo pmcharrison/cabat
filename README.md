@@ -4,7 +4,7 @@
 Try the CA-BAT here! http://shiny.pmcharrison.com/cabat-demo
 
 The CA-BAT is an adaptive test of beat perception ability.
-We invite you to try the test [here](http://shiny.pmcharrison.com/cabat-demo), and
+We invite you to try the test [here](https://shiny.gold-msi.org/longgold_demo/), and
 to read the paper [here](https://doi.org/10.1038/s41598-018-30318-8).
 
 Want to use this test in your own online study, but don't want to go to the trouble of setting up your own 
