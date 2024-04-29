@@ -67,6 +67,23 @@ into new languages:
 
 `devtools::install_github('pmcharrison/cabat')`
 
+5. Tell Shiny to use your computer's default browser, instead of the RStudio browser,
+   which doensn't play well with this test.
+   First, open your .Rprofile file:
+
+```r
+install.packages("usethis")
+usethis::edit_r_profile()
+```
+
+   Add the following lines:
+
+```r
+options(shiny.launch.browser = .rs.invokeShinyWindowExternal)
+```
+
+  Save the file, then restart your R session (in the RStudio toolbar, click Session then Restart R).
+
 ## Usage
 
 ### Quick demo 
