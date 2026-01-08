@@ -9,6 +9,7 @@ cabat_languages <- function() {
     German = "de",
     Italian = "it",
     Spanish = "es",
-    Latvian = "lv"
+    Latvian = "lv",
+    Portuguese = "pt"
   )
 }

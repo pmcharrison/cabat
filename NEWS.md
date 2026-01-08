@@ -1,3 +1,5 @@
+* Added Portuguese support (thanks Rui Sousa!)
+
 # cabat 0.12.1
 
 * Fix typo in Latvian test.
