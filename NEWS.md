@@ -1,3 +1,5 @@
+* Portuguese patches
+
 # cabat 0.13.0
 
 * Added Portuguese support (thanks Rui Sousa!)
