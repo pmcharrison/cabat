@@ -1,6 +1,6 @@
 ID,EN,PT
 ABAT_0001_I_0001_1,Welcome to the adaptive beat perception test!,Bem-vindo ao teste adaptativo de perceção da batida!
-ABAT_0002_I_0001_1,This test assesses your ability to recognise the beat in a piece of music.\\ You will be played some music clips. In each clip you will hear some music together with a **beep-track**.\\ Your task is to decide whether the beep-track is **on** or **off** the beat.,"Este teste avalia a sua capacidade de reconhecer a batida (pulsação) em peças musicais.\\ Vai ouvir vários excertos musicais. Em cada um deles, a música será acompanhada por uma sequência de **bipes**.\\ A sua tarefa é avaliar se os bipes estão ** sincronizados** ou **não sincronizados** com a batida da música."
+ABAT_0002_I_0001_1,This test assesses your ability to recognise the beat in a piece of music.\\ You will be played some music clips. In each clip you will hear some music together with a **beep-track**.\\ Your task is to decide whether the beep-track is **on** or **off** the beat.,"Este teste avalia a sua capacidade de reconhecer a batida (pulsação) em peças musicais.\\ Vai ouvir vários excertos musicais. Em cada um deles, a música será acompanhada por uma sequência de **bipes**.\\ A sua tarefa é avaliar se os bipes estão **sincronizados** ou **não sincronizados** com a batida da música."
 ABAT_0003_I_0001_1,Click 'Next' to hear some examples.,Clica em 'Seguinte' para ouvires alguns exemplos.
 ABAT_0004_I_0001_1,Example - **On** the beat\\In this example the beeps are **on** the beat of the music.,"Exemplo - **Sincronizados**\\Neste exemplo, os bipes estão **sincronizados** com a batida da música."
 ABAT_0005_I_0001_1,Your Beat Perception IQ was:,A sua pontuação da perceção da batida foi:
@@ -15,7 +15,7 @@ ABAT_0013_I_0001_1,Incorrect.,Incorreto.
 ABAT_0014_I_0001_1,"**{{feedback}}**\\Press 'Go back' to read the instructions and try the examples again,\\or press 'Next' to continue to the main test.","**{{feedback}}**\\Clique em 'Voltar' para ler as instruções e para ouvir de novo os exemplos,\\ou clique em 'Seguinte' para continuar o teste."
 ABAT_0015_I_0001_1,Second,Segunda
 ABAT_0016_I_0001_1,"You are about to start the main test, where your results will be recorded.\\You won't receive any feedback for this stage. Good luck!","Vai agora começar o teste, em que as suas respostas serão registadas.\\Nesta fase não receberá feedback. Boa sorte!"
-ABAT_0017_I_0001_1,Question **{{num_question}}** out of **{{test_length}}**,Pergunta **{{num_question}}** de**{{test_length}}**
+ABAT_0017_I_0001_1,Question **{{num_question}}** out of **{{test_length}}**,Pergunta **{{num_question}}** de **{{test_length}}**
 ABAT_0018_I_0001_1,"Your browser doesn't support audio. This test won't work without audio, sorry!","O seu navegador não suporta áudio. Lamentavelmente, este teste não funciona sem áudio."
 ABAT_0019_I_0001_1,"One of these clips has beeps on the beat, the other off the beat.\\ Which clip had beeps **on** the beat? If you don't know, give your best guess!","Um destes excertos musicais tem os bipes sincronizados com a batida, o outro tem os bipes não sincronizados.\\Qual dos excertos musicais tem os bipes **sincronizados**? Se não tem a certeza, dê o seu melhor palpite!"
 ABAT_0020_I_0001_1,You completed the beat perception test!,Completou o teste de perceção da batida!

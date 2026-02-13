@@ -8,9 +8,7 @@
 #' demo_cabat(feedback = cabat.feedback.no_score())}
 cabat.feedback.no_score <- function(dict = cabat::cabat_dict) {
   psychTestR::new_timeline(
-    psychTestR::one_button_page(
-      shiny::HTML(psychTestR::i18n("ABAT_0020_I_0001_1"))
-    ),
+    info_page("ABAT_0020_I_0001_1"),
     dict = dict
   )
 }
@@ -30,7 +28,7 @@ cabat.feedback.simple_score <- function(dict = cabat::cabat_dict) {
         shiny::p(psychTestR::i18n("ABAT_0020_I_0001_1")),
         shiny::p("Your score was:",
                  shiny::strong(round(answer$ability, digits = 2)))
-      ))
+      ), button_text = psychTestR::i18n("ABAT_0021_I_0001_1"))
     }
     ))
 }
