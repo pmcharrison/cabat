@@ -1,3 +1,5 @@
+# cabat 0.13.2
+
 * Portuguese patches.
 * Info page translation patches.
 
