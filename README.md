@@ -52,6 +52,7 @@ into new languages:
 - Elina Tsigeman and Maxim Likhanov (Russian)
 - Jochum van 't Hooft (Dutch)
 - Elvira Brattico (Italian)
+- [Your Name] (Hebrew)
 
 ## Installation instructions (local use)
 
@@ -130,7 +131,7 @@ For more details on the psychTestR interface,
 see http://psychtestr.com/.
 
 The CA-BAT currently supports English (EN), French (FR), German (DE), Russian (RU),
-Spanish (ES), Latvian (LV), Italian (IT), and Portuguese (PT).
+Spanish (ES), Latvian (LV), Italian (IT), Portuguese (PT), and Hebrew (HE).
 If you would like to add a new language to this list, please contact us.
 You can select one of these languages by passing a language code as 
 an argument to `standalone_cabat()`, e.g. `standalone_cabat(languages = "DE")`,
