@@ -1,27 +1,27 @@
 ID,EN,HE
-ABAT_0001_I_0001_1,Welcome to the adaptive beat perception test!,ברוכים הבאים למבחן תפיסת הקצב האדפטיבי!
-ABAT_0002_I_0001_1,"This test assesses your ability to recognise the beat in a piece of music.\\ You will be played some music clips. In each clip you will hear some music together with a **beep-track**.\\ Your task is to decide whether the beep-track is **on** or **off** the beat.","מבחן זה בוחן את יכולתך לזהות את הקצב ביצירות מוזיקליות.\\ תשמע מספר קטעי מוזיקה. בכל קטע תשמע מוזיקה יחד עם **צפצופים**.\\ המשימה שלך היא להחליט האם הצפצופים **בתיזמון** או **לא בתיזמון** עם הקצב."
-ABAT_0003_I_0001_1,Click 'Next' to hear some examples.,לחץ על 'הבא' לשמוע כמה דוגמאות.
-ABAT_0004_I_0001_1,"Example - **On** the beat\In this example the beeps are **on** the beat of the music.","דוגמה - **בתיזמון** עם הקצב\בדוגמה זו הצפצופים **בתיזמון** עם קצב המוזיקה."
-ABAT_0005_I_0001_1,Your Beat Perception IQ was:,ציון תפיסת הקצב שלך היה:
-ABAT_0006_I_0001_1,"Example - **Off** the beat\In this example the beeps are **off** the beat of the music.","דוגמה - **לא בתיזמון** עם הקצב\בדוגמה זו הצפצופים **לא בתיזמון** עם קצב המוזיקה."
-ABAT_0007_I_0001_1,Beat Perception IQ,ציון תפיסת קצב
-ABAT_0008_I_0001_1,"In the test you will be played two versions of the same music clip, one after the other.\\ One version will have beeps **on** the beat, and the other will have beeps **off** the beat.\\ Your task is to decide whether the clip with beeps **on** the beat came first or second.","במבחן תשמע שתי גרסאות של אותו קטע מוזיקלי, אחת אחרי השנייה.\\ לגרסה אחת יהיו צפצופים **בתיזמון** עם הקצב, ולשנייה יהיו צפצופים **לא בתיזמון**.\\ המשימה שלך היא להחליט אם הקטע עם הצפצופים **בתיזמון** הופיע ראשון או שני."
-ABAT_0009_I_0001_1,**Example question {{no_example}}/2**\Which clip had beeps **on** the beat?,**שאלת דוגמה {{no_example}}/2**\לאיזה קטע היו צפצופים **בתיזמון** עם הקצב?
+ABAT_0001_I_0001_1,Welcome to the adaptive beat perception test!,!ברוכים הבאים למשימת תפיסת הפעמה האדפטיבית
+ABAT_0002_I_0001_1,This test assesses your ability to recognise the beat in a piece of music.\\ You will be played some music clips. In each clip you will hear some music together with a **beep-track**.\\ Your task is to decide whether the beep-track is **on** or **off** the beat.,.משימה זו בודקת את יכולתך לזהות את הפעמה ביצירה מוזיקלית\\.במטלה יושמעו מספר קטעי מוזיקה. בכל קטע תושמע מוזיקה ביחד עם רצף של **צפצופים** (ביפים)\\.המשימה שלך היא להחליט האם הצפצופים **מסונכרנים** או **לא מסונכרנים** עם הפעמה
+ABAT_0003_I_0001_1,Click 'Next' to hear some examples.,.יש ללחוץ על 'הבא' בכדי לשמוע כמה דוגמאות
+ABAT_0004_I_0001_1,Example - **On** the beat\In this example the beeps are **on** the beat of the music.,דוגמה - **סנכרון** עם הפעמה\\.בדוגמה זו הצפצופים **מסונכרנים** עם הפעמה במוזיקה
+ABAT_0005_I_0001_1,Your Beat Perception IQ was:,ציון תפיסת הפעמה שלך היה:
+ABAT_0006_I_0001_1,Example - **Off** the beat\In this example the beeps are **off** the beat of the music.,דוגמה - **היעדר סנכרן** עם הפעמה\\.בדוגמה זו הצפצופים **לא מסונכרנים** עם הפעמה במוזיקה
+ABAT_0007_I_0001_1,Beat Perception IQ,ציון תפיסת פעמה
+ABAT_0008_I_0001_1,"In the test you will be played two versions of the same music clip, one after the other.\\ One version will have beeps **on** the beat, and the other will have beeps **off** the beat.\\ Your task is to decide whether the clip with beeps **on** the beat came first or second.",".במטלה יושמעו שתי גרסאות של אותו קטע מוזיקלי, אחת אחרי השנייה\\.בגרסה אחת יושמעו צפצופים אשר **מסונכרנים** עם הפעמה, ובשנייה יושמעו צפצופים אשר **לא מסונכרנים** עם הפעמה\\.המשימה שלך היא להחליט האם הקטע שבו הצפצופים היו **מסונכרנים** עם הפעמה הופיע ראשון או שני"
+ABAT_0009_I_0001_1,**Example question {{no_example}}/2**\Which clip had beeps **on** the beat?,**שאלת דוגמה {{no_example}}/2**\\?באיזה קטע הצפצופים היו **מסונכרנים** עם הפעמה
 ABAT_0010_I_0001_1,First,ראשון
-ABAT_0011_I_0001_1,Correct!,נכון!
-ABAT_0012_I_0001_1,**{{feedback}}**\Press 'Continue' to try another example.,**{{feedback}}**\לחץ 'המשך' לנסות דוגמה נוספת.
-ABAT_0013_I_0001_1,Incorrect.,לא נכון.
-ABAT_0014_I_0001_1,"**{{feedback}}**\Press 'Go back' to read the instructions and try the examples again,\or press 'Next' to continue to the main test.","**{{feedback}}**\לחץ 'חזור' לקרוא את ההנחיות ולנסות שוב את הדוגמאות,\או לחץ 'הבא' להמשיך למבחן הראשי."
+ABAT_0011_I_0001_1,Correct!,!נכון
+ABAT_0012_I_0001_1,**{{feedback}}**\Press 'Continue' to try another example.,**{{feedback}}**\\.יש ללחוץ על 'המשך' בכדי לנסות דוגמה נוספת
+ABAT_0013_I_0001_1,Incorrect.,.לא נכון
+ABAT_0014_I_0001_1,"**{{feedback}}**\Press 'Go back' to read the instructions and try the examples again,\or press 'Next' to continue to the main test.","**{{feedback}}**\\יש ללחוץ על 'חזור' בכדי לקרוא את ההנחיות ולנסות שוב את הדוגמאות,‏\\.או יש ללחוץ על 'הבא' על מנת להמשיך למטלה הראשית"
 ABAT_0015_I_0001_1,Second,שני
-ABAT_0016_I_0001_1,"You are about to start the main test, where your results will be recorded.\You won't receive any feedback for this stage. Good luck!","אתה עומד להתחיל את המבחן הראשי, שבו יירשמו תוצאותיך.\לא תקבל משוב בשלב זה. בהצלחה!"
+ABAT_0016_I_0001_1,"You are about to start the main test, where your results will be recorded.\You won't receive any feedback for this stage. Good luck!",".המטלה הראשית מיד תתחיל, בה יירשמו תוצאותיך\\!לא יתקבל שום משוב בשלב זה. בהצלחה"
 ABAT_0017_I_0001_1,Question **{{num_question}}** out of **{{test_length}}**,שאלה **{{num_question}}** מתוך **{{test_length}}**
-ABAT_0018_I_0001_1,"Your browser doesn't support audio. This test won't work without audio, sorry!",הדפדפן שלך אינו תומך בשמע. מבחן זה לא יעבוד ללא שמע - מצטערים!
-ABAT_0019_I_0001_1,"One of these clips has beeps on the beat, the other off the beat.\\ Which clip had beeps **on** the beat? If you don't know, give your best guess!","לאחד מהקטעים יש צפצופים בתיזמון עם הקצב, ולשני אין.\\ לאיזה קטע היו צפצופים **בתיזמון** עם הקצב? אם אינך יודע, נחש את תשובתך הטובה ביותר!"
-ABAT_0020_I_0001_1,You completed the beat perception test!,השלמת את מבחן תפיסת הקצב!
+ABAT_0018_I_0001_1,"Your browser doesn't support audio. This test won't work without audio, sorry!",!הדפדפן שלך אינו תומך בשמע. מבחן זה לא יעבוד ללא שמע - מצטערים
+ABAT_0019_I_0001_1,"One of these clips has beeps on the beat, the other off the beat.\\ Which clip had beeps **on** the beat? If you don't know, give your best guess!",".באחד מהקטעים הצפצופים מסונכרנים עם הפעמה, ובאחר הצפצופים אינם מסונכרנים\\!באיזה קטע הצפצופים היו **מסונכרנים** עם הפעמה? אם התשובה אינה ברורה לך, יש לנחש את התשובה הטובה ביותר"
+ABAT_0020_I_0001_1,You completed the beat perception test!,!השלמת את מבחן תפיסת הפעמה
 ABAT_0021_I_0001_1,Next,הבא
 ABAT_0022_I_0001_1,Go back,חזור
-enter_p_id,Please enter your participant ID.,אנא הזן את מספר המשתתף שלך.
-results_have_been_saved,Your results have been saved.,תוצאותיך נשמרו.
-you_may_close_browser,You may now close the browser window.,כעת תוכל לסגור את חלון הדפדפן.
-demo_intro,"Welcome to the **Computerised Adaptive Beat Alignment Test**!\This test adapts to your performance. If you do well, you will be given harder items.\Usually this adaptive procedure is hidden from the participant. For this demonstration, however, we will show your running ability score and corresponding difficulty level on each trial.","ברוכים הבאים ל**מבחן יישור הקצב האדפטיבי הממוחשב**!\מבחן זה מתאים את עצמו לביצועיך. אם תצליח, תקבל פריטים קשים יותר.\בדרך כלל, נוהל אדפטיבי זה מוסתר מהמשתתף. עם זאת, להדגמה זו, נציג את ציון היכולת הנוכחי שלך ורמת הקושי המתאימה בכל ניסיון."
+enter_p_id,Please enter your participant ID.,.יש להזין את מספר המשתתף שלך
+results_have_been_saved,Your results have been saved.,.תוצאותיך נשמרו
+you_may_close_browser,You may now close the browser window.,.כעת ניתן לסגור את חלון הדפדפן
+demo_intro,"Welcome to the **Computerised Adaptive Beat Alignment Test**!\This test adapts to your performance. If you do well, you will be given harder items.\Usually this adaptive procedure is hidden from the participant. For this demonstration, however, we will show your running ability score and corresponding difficulty level on each trial.","!ברוכים הבאים ל**משימת תפיסת הלימת הביט האדפטיבית הממוחשבת**\\.משימת זו מתאימה את עצמה לביצועיך. במידה והצלחת, המשימה תהפוך קשה יותר\\.בדרך כלל, נוהל אדפטיבי זה מוסתר מהמשתתף. עם זאת, להדגמה זו, נציג את ציון היכולת הנוכחי שלך ורמת הקושי המתאימה בכל ניסיון"

@@ -22,6 +22,7 @@ intro <- function(practice_items, dict) {
       psychTestR::while_loop(
         test = function(state, ...) psychTestR::get_local("do_intro", state),
         logic = c(
+          info_page("ABAT_0001_I_0001_1"),
           info_page("ABAT_0002_I_0001_1"),
           info_page("ABAT_0003_I_0001_1"),
           audio_ex_page("ABAT_0004_I_0001_1", file.path(practice_items, "training1.mp3")),

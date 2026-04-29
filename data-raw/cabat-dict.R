@@ -34,7 +34,7 @@ names(portuguese)[[1]] <- "key"
 stopifnot(all(input$key == portuguese$key))
 input$PT <- portuguese$PT
 
-hebrew <- read.csv("data-raw/dict-hebrew.csv", stringsAsFactors = FALSE, encoding = "utf-8")
+hebrew <- read.csv("data-raw/dict-hebrew.csv", stringsAsFactors = FALSE, encoding = "UTF-8")
 names(hebrew)[[1]] <- "key"
 stopifnot(all(input$key == hebrew$key))
 input$HE <- hebrew$HE
